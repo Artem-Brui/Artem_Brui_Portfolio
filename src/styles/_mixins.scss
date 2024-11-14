@@ -1,0 +1,113 @@
+@import './_variables.scss';
+
+// #region =========Ubuntu Font=========
+@mixin BG-Text-U {
+  font-family: $font-family-ubuntu;
+  font-size: 117px;
+  line-height: 134px;
+  font-weight: 400;
+}
+
+@mixin H1-U {
+  font-family: $font-family-ubuntu;
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 400;
+}
+
+@mixin H2-U {
+  font-family: $font-family-ubuntu;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+@mixin Button-U {
+  font-family: $font-family-ubuntu;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@mixin Article-U {
+  font-family: $font-family-ubuntu;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 100;
+}
+
+@mixin Para-U {
+  font-family: $font-family-ubuntu;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 100;
+}
+
+@mixin Label-U-M {
+  font-family: $font-family-ubuntu;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+@mixin Label-U-L {
+  font-family: $font-family-ubuntu;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 100;
+}
+
+// #endregion =========Ubuntu Font=========
+
+// #region =========IBM Plex Mono Font=========
+@mixin Number-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 500;
+}
+
+@mixin H2-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+@mixin Logo-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+@mixin Menu-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+@mixin Media-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@mixin Para-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@mixin Code-M {
+  font-family: $font-family-ibm-plex-mono;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+// #endregion  =========IBM Plex Mono Font=========
+
