@@ -111,3 +111,15 @@
 
 // #endregion  =========IBM Plex Mono Font=========
 
+// #region =========Themes=========
+@mixin dark-theme {
+  background-color: $background-color-dark;
+  color: $font-color-dark;
+}
+
+@mixin light-theme {
+  background-color: $background-color-light;
+  color: $font-color-light;
+}
+
+// #endregion =========Themes=========

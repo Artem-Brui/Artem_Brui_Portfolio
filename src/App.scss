@@ -1,0 +1,9 @@
+@import './styles/mixins.scss';
+
+.dark {
+  @include dark-theme;
+}
+
+.light {
+  @include light-theme;
+}

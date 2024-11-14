@@ -1,0 +1,9 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/mixins';
+
+
+.logo {
+  @include Media-M;
+
+  color: $Brand-1;
+}

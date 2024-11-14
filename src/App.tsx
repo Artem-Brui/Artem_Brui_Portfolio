@@ -1,10 +1,19 @@
-import './App.scss'
 
-function App() {
+import Header from './components/Header/Header.tsx';
+import './App.scss';
+import useTheme from './customHooks/useTheme.ts';
+
+
+const App = () => {
+  const { theme } = useTheme();
+  console.log('render');
+  
 
   return (
-    <p>Helo World!</p>
-  )
-}
+    <div className={theme}>
+      <Header />
+    </div>
+  );
+};
 
-export default App
+export default App;
