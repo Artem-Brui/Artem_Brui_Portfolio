@@ -1,0 +1,28 @@
+@import '../../../../index.scss';
+
+button {
+  background: none;
+  border: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.burger_menu {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.light {
+  background-image: url('../../../../public/icons/icon-menu-light.svg');
+}
+
+.dark {
+  background-image: url('../../../../public/icons/icon-menu-dark.svg');
+}

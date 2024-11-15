@@ -1,17 +1,15 @@
-import useTheme from "../../customHooks/useTheme.ts";
+import Logo from "./Header-components/Logo/Logo.tsx";
+import Menu from "./Header-components/Menu/Menu.tsx";
+import SocLinks from "./Header-components/SocLinks/SocLinks.tsx";
+import styles from "./Header.module.scss";
 
 const Header = () => {
-  const { theme, toggleTheme } = useTheme();
-
-  const handleClick = () => toggleTheme();
-
   return (
-    <>
-      <h1>Hello World!</h1>
-      <button onClick={handleClick}>
-        {theme === 'light' ? 'Dark' : 'Light'}
-      </button>
-    </>
+    <header className={styles.header}>
+      <Logo />
+      <SocLinks />
+      <Menu />
+    </header>
   );
 };
 

@@ -1,0 +1,69 @@
+@import '../../index.scss';
+
+.toggle {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 35px;
+  height: 20px;
+  padding: 1.5px 4px;
+  border-radius: 30px;
+  background-color: $Brand-1;
+  // position: absolute;
+  // left: 0;
+  // bottom: -30px;
+
+  & input {
+    opacity: 0;
+  }
+
+  &::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: transform 500ms;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    // position: absolute;
+    // top: 0px;
+    // right: -21px;
+    // opacity: 0;
+    transition: opacity 500ms;
+  }
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+}
+
+.dark {
+  &::before {
+    background-color: $light-theme;
+  }
+
+  &::after {
+    background-image: url('../../../../public/icons/icon-moon.svg');
+  }
+}
+
+.light {
+  &::before {
+    background-color: $dark-theme;
+    transform: translateX(75%);
+  }
+
+  &::after {
+    background-image: url('../../../../public/icons/icon-sun.svg');
+  }
+}
+

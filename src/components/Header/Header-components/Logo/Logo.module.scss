@@ -1,0 +1,10 @@
+@import '../../../../index.scss';
+
+.logo {
+  @include Media-M;
+
+  & span {
+    color: $Brand-1;
+    margin-right: 8px;
+  }
+}

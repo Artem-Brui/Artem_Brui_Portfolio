@@ -1,17 +1,16 @@
-
-import Header from './components/Header/Header.tsx';
-import './App.scss';
-import useTheme from './customHooks/useTheme.ts';
-
+import Header from "./components/Header";
+import "./App.scss";
+import useTheme from "./customHooks/useTheme.ts";
+import classNames from "classnames";
+import Home from "./components/Home";
 
 const App = () => {
   const { theme } = useTheme();
-  console.log('render');
-  
 
   return (
-    <div className={theme}>
+    <div className={classNames("page", theme)}>
       <Header />
+      <Home />
     </div>
   );
 };

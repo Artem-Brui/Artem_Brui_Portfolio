@@ -1,9 +1,12 @@
-@import '../../styles/_variables.scss';
-@import '../../styles/mixins';
+@import '../../index.scss';
 
 
-.logo {
-  @include Media-M;
-
-  color: $Brand-1;
+.header {
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid $Grey;
 }
