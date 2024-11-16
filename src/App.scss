@@ -1,9 +1,11 @@
 @import "./styles/mixins.scss";
 
+
+
 .page {
-  height: 100vh;
-  transition: background-color 500ms;
   padding-inline: 24px;
+  transition-property: color, background-color, background-image;
+  transition-duration: 500ms;
 }
 
 .dark {

@@ -38,7 +38,6 @@
     position: absolute;
     top: 2px;
     right: -21px;
-    transition: opacity 500ms;
   }
 }
 
@@ -54,6 +53,7 @@
 
   &::after {
     background-image: url('../../../public/icons/icon-moon.svg');
+    transition: background-image 500ms;
   }
 }
 
@@ -61,6 +61,7 @@
   &::before {
     background-color: $dark-theme;
     transform: translateX(75%);
+    transition: transform 500ms;
   }
 
   &::after {
