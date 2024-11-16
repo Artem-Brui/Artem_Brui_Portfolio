@@ -1,0 +1,42 @@
+@import "../../../../index.scss";
+
+.counter {
+  justify-self: center;
+  width: 250px;
+  height: 380px;
+  border-radius: 80px;
+  background-color: $BG-2;
+  background-color: $Grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 18px;
+  gap: 40px;
+
+  &_item {
+    width: 140px;
+    display: flex;
+
+    &:last-of-type {
+      position: relative;
+      left: -29px;
+    }
+  }
+}
+
+.counter_number {
+  @include Number-M;
+
+  color: $Brand-1;
+  margin-right: 16px;
+  position: relative;
+  top: -11px;
+}
+
+.counter_text {
+  @include Para-M;
+
+  margin-right: 16px;
+  color: $Brand-2;
+}

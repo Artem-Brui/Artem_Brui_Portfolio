@@ -1,0 +1,11 @@
+@import '../../../../index.scss';
+
+.text {
+  margin-inline: 24px;
+}
+
+.descreption_text {
+  @include Para-M;
+
+  margin-block: 8px;
+}

@@ -1,8 +1,11 @@
-import Header from "./components/Header";
+import classNames from "classnames";
+
 import "./App.scss";
 import useTheme from "./customHooks/useTheme.ts";
-import classNames from "classnames";
+
+import Header from "./components/Header";
 import Home from "./components/Home";
+import Switcher from "./components/Home/Home-components/Switcher/Switcher.tsx";
 
 const App = () => {
   const { theme } = useTheme();
@@ -10,6 +13,7 @@ const App = () => {
   return (
     <div className={classNames("page", theme)}>
       <Header />
+      <Switcher />
       <Home />
     </div>
   );

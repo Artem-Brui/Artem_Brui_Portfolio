@@ -98,7 +98,7 @@
 @mixin Para-M {
   font-family: $font-family-ibm-plex-mono;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 400;
 }
 
@@ -115,11 +115,13 @@
 @mixin dark-theme {
   background-color: $background-color-dark;
   color: $font-color-dark;
+  border-color: $font-color-dark;
 }
 
 @mixin light-theme {
   background-color: $background-color-light;
   color: $font-color-light;
+  border-color: $font-color-light;
 }
 
 // #endregion =========Themes=========

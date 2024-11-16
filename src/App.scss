@@ -15,3 +15,15 @@
 .light {
   @include light-theme;
 }
+
+section:not(:first) {
+  min-height: 100vh;
+}
+
+section:first-of-type {
+  min-height: calc(100vh - 70px);
+}
+
+.tags {
+  color: $Brand-1
+}

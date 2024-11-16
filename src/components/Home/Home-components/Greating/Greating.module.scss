@@ -1,0 +1,14 @@
+@import '../../../../index.scss';
+
+
+.text {
+  margin-inline: 24px;
+}
+
+.greating_text {
+  @include H2-M;
+
+  & span {
+    color: $Brand-1;
+  }
+}
