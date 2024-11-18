@@ -6,6 +6,7 @@ import useTheme from "./customHooks/useTheme.ts";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Switcher from "./components/Home/Home-components/Switcher/Switcher.tsx";
+import About from "./components/About/About.tsx";
 
 const App = () => {
   const { theme } = useTheme();
@@ -15,6 +16,7 @@ const App = () => {
       <Header />
       <Switcher />
       <Home />
+      <About />
     </div>
   );
 };

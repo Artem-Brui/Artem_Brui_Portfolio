@@ -1,9 +1,9 @@
-@import '../../index.scss';
+@import "../../index.scss";
 
 .home_items {
-  margin: 0 auto;
+  margin-block: auto;
   max-width: 1300px;
   display: grid;
-  padding-top: 40px;
+  // padding-top: 40px;
   grid-gap: 60px;
 }

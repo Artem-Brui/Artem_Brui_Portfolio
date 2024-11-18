@@ -7,8 +7,9 @@ import styles from "./Home.module.scss";
 import FormLink from "./Home-components/FormLink";
 
 const Home = () => {
+
   return (
-    <section className={styles.home_items}>
+    <section className={styles.home_items} >
       <Photo />
       <Greating />
       <Descreption />

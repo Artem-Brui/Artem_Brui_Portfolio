@@ -1,9 +1,11 @@
 import styles from "./SocLinks.module.scss";
 
 import { LinkedinIcon, GitHubIcon } from "./Icons";
+import useTheme from "../../../../customHooks/useTheme";
 
 const SocLinks = () => {
-  const iconColor = "#12F7D6";
+  const { theme, colorBrand } = useTheme();
+  const iconColor = theme === 'dark' ? colorBrand : colorBrand;
   const iconWidth = 20;
   const iconHeight = 20;
 

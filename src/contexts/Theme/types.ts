@@ -7,4 +7,7 @@ export type ChildrenType = {
 export type contextThemeType = {
   theme: string;
   toggleTheme: () => void;
+  colorLight: string;
+  colorDark: string;
+  colorBrand: string;
 }

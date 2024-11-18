@@ -1,11 +1,12 @@
-@import "./styles/mixins.scss";
-
-
+@import "./index.scss";
 
 .page {
-  padding-inline: 24px;
   transition-property: color, background-color, background-image;
   transition-duration: 500ms;
+
+  & > * {
+    padding-inline: 24px;
+  }
 }
 
 .dark {
@@ -16,12 +17,14 @@
   @include light-theme;
 }
 
-section:not(:first) {
+section:not(:first-of-type) {
   min-height: 100vh;
+  margin-top: 40px;
 }
 
 section:first-of-type {
   min-height: calc(100vh - 70px);
+  margin-top: 40px;
 }
 
 .tags {
