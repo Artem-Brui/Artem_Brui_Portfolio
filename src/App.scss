@@ -17,14 +17,16 @@
   @include light-theme;
 }
 
+section {
+  padding-block: 40px;
+}
+
 section:not(:first-of-type) {
   min-height: 100vh;
-  margin-top: 40px;
 }
 
 section:first-of-type {
   min-height: calc(100vh - 70px);
-  margin-top: 40px;
 }
 
 .tags {

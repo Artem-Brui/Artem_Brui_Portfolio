@@ -1,11 +1,21 @@
 @import '../../../../index.scss';
 
-.myPhoto {
+.container {
   justify-self: center;
+  display: flex;
+  justify-content: center;
+}
+
+.myPhoto {
+  object-fit: 105%;
   width: 80%;
   max-width: 500px;
   border-width: 5px;
   border-style: solid;
   border-radius: 40% 0;
   box-shadow: -5px -5px 10px $Brand-1;
+}
+
+.light {
+  color: grey;
 }

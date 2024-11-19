@@ -1,16 +1,16 @@
 import Tag from "../../../Home/Home-components/Tag";
 import styles from "./AboutText.module.scss";
 
-export const AboutText = () => {
+const AboutText = () => {
   return (
     <div className={styles.text__container}>
       <Tag content="<p>" />
-      <h4 className={styles.greating}>Hello!</h4>
+      <p className={styles.greating}>Hello!</p>
 
       <p className={styles.text}>
         My name is <span className="highlight">Artem</span> and I specialize in
         Web Developement that utilizes <span>JavaScript</span>,{" "}
-        <span>TypeScript</span>, <span>REACT</span>, <span>EXPRESS</span>, and{" "}
+        <span>TypeScript</span>, <span>React</span>, <span>Express</span>, and{" "}
         <span>MongoDB</span> etc.
       </p>
 

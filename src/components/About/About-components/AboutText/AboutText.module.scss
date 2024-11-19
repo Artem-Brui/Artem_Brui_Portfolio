@@ -11,11 +11,6 @@
   display: grid;
   gap: 20px;
   backdrop-filter: blur(4px);
-
-  & h4 {
-    font-size: 25px;
-    color: $Brand-1;
-  }
 }
 
 .text,
@@ -23,6 +18,7 @@
   padding-left: 16px;
 }
 
+.greating,
 .text > span {
   color: $Brand-1;
 }

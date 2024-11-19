@@ -1,0 +1,22 @@
+@import "../../../../index.scss";
+
+.container {
+  display: grid;
+}
+
+.title {
+  @include H1-U;
+
+  justify-self: center;
+  color: $Brand-1;
+  width: min-content;
+  border-bottom: 5px solid $Brand-1;
+  margin-bottom: 16px;
+}
+
+.text {
+  @include Para-M;
+
+  text-align: center;
+  margin-bottom: 44px;
+}

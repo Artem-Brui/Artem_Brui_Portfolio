@@ -3,7 +3,7 @@ import useTheme from "../../../../customHooks/useTheme";
 import styles from "./Counter.module.scss";
 
 const Counter = () => {
-  const { theme, colorLight, colorDark } = useTheme();
+  const { theme } = useTheme();
 
   const containerClass = theme === 'dark' ? styles.container_dark : styles.container_light;
   const textColorClass = theme === 'dark' ? styles.font_dark : styles.font_light;
