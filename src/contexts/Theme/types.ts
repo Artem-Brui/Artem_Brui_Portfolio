@@ -9,5 +9,6 @@ export type contextThemeType = {
   toggleTheme: () => void;
   colorLight: string;
   colorDark: string;
+  colorDarkPlus: string;
   colorBrand: string;
 }

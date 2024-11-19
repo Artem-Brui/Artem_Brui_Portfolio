@@ -4,16 +4,13 @@
   justify-self: center;
   width: 250px;
   height: 380px;
-  // border-radius: 80px;
-  // background-color: $Grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-left: 18px;
   gap: 40px;
-  position: relative;
-  z-index: 2;
+  border-radius: 80px;
 
   &_item {
     width: 140px;
@@ -23,17 +20,6 @@
       position: relative;
       left: -29px;
     }
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    border-radius: 80px;
-    filter: blur(3px) opacity(30%);
   }
 }
 
@@ -62,16 +48,9 @@
 }
 
 .container_dark {
-  &::after {
-    background-color: rgba($Grey, 0.5);
-    background-color: $BG-2;
-  }
-  
+  background-color: $BG-2;
 }
 
 .container_light {
-  &::after {
-    background-color: rgba($Grey, 0.5);
-    background-color: $Brand-1;
-  }
+  background-color: rgba($Brand-1, .2);
 }

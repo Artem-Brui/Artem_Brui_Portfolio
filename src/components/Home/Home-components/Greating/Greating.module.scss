@@ -1,5 +1,9 @@
 @import '../../../../index.scss';
 
+.greating {
+  display: grid;
+  gap: 20px;
+}
 
 .text {
   margin-inline: 24px;

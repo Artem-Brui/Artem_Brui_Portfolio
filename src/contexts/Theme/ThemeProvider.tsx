@@ -12,11 +12,12 @@ export const ThemeProvider: React.FC<ChildrenType> = ({ children }) => {
 
   const colorLight = '#fffff';
   const colorDark = '#292F36';
+  const colorDarkPlus = '#1A1E23';
   const colorBrand = '#569cd6';
 
   return (
     <ThemeContext.Provider
-      value={{ theme, toggleTheme, colorLight, colorDark, colorBrand }}
+      value={{ theme, toggleTheme, colorLight, colorDark, colorDarkPlus, colorBrand }}
     >
       {children}
     </ThemeContext.Provider>
