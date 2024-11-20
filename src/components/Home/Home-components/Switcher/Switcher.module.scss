@@ -5,68 +5,29 @@
 .switcher {
   display: block;
   cursor: pointer;
-  box-sizing: border-box;
-  width: 35px;
-  height: 20px;
-  padding: 2.2px 3px;
+  width: 48px;
+  height: 29px;
   border-radius: 30px;
-  background-color: $Brand-1;
+  border: 2px solid $Brand-1;
+  margin-bottom: 20px;
   position: relative;
 
   & input {
     opacity: 0;
-    position: relative;
     top: -15px;
-  }
-
-  &::before {
-    display: block;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    transition: transform 500ms;
-  }
-
-  &::after {
-    display: block;
-    content: '';
-    width: 16px;
-    height: 16px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 2px;
-    right: -21px;
   }
 }
 
 .icon {
-  width: 12px;
-  height: 12px;
+  padding-left: 3.4px;
+  padding-top: 3.5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  transition: transform 500ms;
 }
 
-.dark {
-  &::before {
-    background-color: $light-theme;
-  }
-
-  &::after {
-    background-image: url('../../../public/icons/icon-moon.svg');
-    transition: background-image 500ms;
-  }
+.hiden {
+  display: none;
 }
-
-.light {
-  &::before {
-    background-color: $dark-theme;
-    transform: translateX(75%);
-    transition: transform 500ms;
-  }
-
-  &::after {
-    background-image: url('../../../public/icons/icon-sun.svg');
-  }
-}
-

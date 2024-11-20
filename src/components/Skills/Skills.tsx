@@ -1,13 +1,15 @@
 
 import styles from "./Skills.module.scss";
-import classNames from "classnames";
 import SkillsList from "./Skills-components/SkillsList";
-import SkillHead from "./Skills-components/SkillHead";
+import SectionHead from "../SectionHead";
 
 const Skills = () => {
+  const title = 'Skills';
+  const textHead = 'I am striving to never stop learning and improving';
+
   return (
-    <section className={classNames(styles.skills)}>
-      <SkillHead />
+    <section className={styles.skills}>
+      <SectionHead title={title} text={textHead} />
       <SkillsList />
     </section>);
 };

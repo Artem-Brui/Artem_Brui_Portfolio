@@ -1,0 +1,45 @@
+.container {
+  display: grid;
+}
+
+.title {
+  @include H1-U;
+  
+  justify-self: center;
+  color: $Brand-1;
+  width: min-content;
+  border-bottom: 5px solid $Brand-1;
+  margin-bottom: 16px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $Brand-1;
+    position: absolute;
+    left: -17px;
+    bottom: -11px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $Brand-1;
+    position: absolute;
+    right: -17px;
+    bottom: -11px;
+  }
+}
+
+.text {
+  @include Para-M;
+
+  text-align: center;
+  margin-bottom: 80px;
+}

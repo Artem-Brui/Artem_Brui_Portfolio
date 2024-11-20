@@ -1,19 +1,26 @@
 import useTheme from "../../../../customHooks/useTheme";
+import { BurgerMenu } from "../../../SVGs/Icons";
 import styles from "./Menu.module.scss";
-import classNames from "classnames";
 
 const Menu = () => {
-  const { theme } = useTheme();
+  const { theme, colorLight, colorDark } = useTheme();
+  
+  const iconColor = theme === 'dark' ? colorLight : colorDark;
+  const iconWidth = '40px';
+  const iconHeight = '40px';
 
   return (
     <nav className={styles.navigation}>
-      <button
-        className={classNames(styles.burger_menu, {
-          [styles.light]: theme === "light",
-          [styles.dark]: theme === "dark",
-        })}
-        onClick={() => {}}
-      ></button>
+      <a
+        className={styles.burger_menu}
+        onClick={() => {console.log(444444);
+        }}
+      >
+        <BurgerMenu
+          width={iconWidth}
+          height={iconHeight}
+          color={iconColor} />
+      </a>
     </nav>
   );
 };

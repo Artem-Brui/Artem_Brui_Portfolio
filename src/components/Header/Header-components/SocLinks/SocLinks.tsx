@@ -1,21 +1,28 @@
 import styles from "./SocLinks.module.scss";
 
-import { LinkedinIcon, GitHubIcon } from "./Icons";
+import {Linkedin, GitHub} from "../../../SVGs/Icons";
 import useTheme from "../../../../customHooks/useTheme";
 
 const SocLinks = () => {
-  const { theme, colorBrand } = useTheme();
-  const iconColor = theme === 'dark' ? colorBrand : colorBrand;
-  const iconWidth = 20;
-  const iconHeight = 20;
+  const { colorBrand } = useTheme();
+  
+  const iconWidth = '25px';
+  const iconHeight = '25px';
 
   return (
     <div className={styles.socLinks}>
       <a href="https://www.linkedin.com/in/artem-brui-563252288" target="blank">
-        <LinkedinIcon color={iconColor} width={iconWidth} height={iconHeight} />
+        <Linkedin
+          width={iconWidth}
+          height={iconHeight}
+          color={colorBrand} />
       </a>
+
       <a href="https://github.com/Artem-Brui" target="blank">
-        <GitHubIcon color={iconColor} width={iconWidth} height={iconHeight} />
+      <GitHub
+          width={iconWidth}
+          height={iconHeight}
+          color={colorBrand} />
       </a>
     </div>
   );
