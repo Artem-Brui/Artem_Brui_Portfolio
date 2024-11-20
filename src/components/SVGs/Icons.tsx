@@ -1,6 +1,6 @@
 export type PropsIcons = {
-  width: string;
-  height: string;
+  width: number;
+  height: number;
   color: string;
 };
 
@@ -8,8 +8,8 @@ const Linkedin: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
       fill={color}
-      height={height}
-      width={width}
+      height={`${height}px`}
+      width={`${width}px`}
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +31,8 @@ const Linkedin: React.FC<PropsIcons> = ({ width, height, color }) => {
 const GitHub: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 20 20"
       version="1.1"
@@ -66,8 +66,8 @@ const GitHub: React.FC<PropsIcons> = ({ width, height, color }) => {
 const BurgerMenu: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       viewBox="0 0 24 24"
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +90,8 @@ const Sun: React.FC<PropsIcons> = ({ width, height, color }) => {
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       viewBox="0 0 64 64"
       enableBackground="new 0 0 64 64"
       xmlSpace="preserve"
@@ -171,8 +171,8 @@ const Sun: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Moon: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -188,8 +188,8 @@ const Moon: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Mail: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       viewBox="0 -3.5 32 32"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -226,8 +226,8 @@ const Html: React.FC<PropsIcons> = ({ width, height, color }) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 512 512"
       enableBackground="new 0 0 512 512"
@@ -255,8 +255,8 @@ const Css: React.FC<PropsIcons> = ({ width, height, color }) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 512 512"
       enableBackground="new 0 0 512 512"
@@ -282,8 +282,8 @@ const Css: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Bootstrap: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 27 21"
       xmlns="http://www.w3.org/2000/svg"
@@ -301,8 +301,8 @@ const Bootstrap: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Bulma: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 32 32"
       version="1.1"
@@ -316,8 +316,8 @@ const Bulma: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Sass: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
@@ -336,8 +336,8 @@ const Javascript: React.FC<PropsIcons> = ({ width, height, color }) => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 512 512"
       enableBackground="new 0 0 512 512"
@@ -369,8 +369,8 @@ const Javascript: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Typescript: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 24 24"
       role="img"
@@ -384,8 +384,8 @@ const Typescript: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Git: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 32 32"
       version="1.1"
@@ -400,8 +400,8 @@ const Git: React.FC<PropsIcons> = ({ width, height, color }) => {
 const React: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
@@ -435,8 +435,8 @@ const React: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Redux: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 -0.5 25 25"
       xmlns="http://www.w3.org/2000/svg"
@@ -450,8 +450,8 @@ const Redux: React.FC<PropsIcons> = ({ width, height, color }) => {
 const Express: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
+      height={`${height}px`}
+      width={`${width}px`}
       fill={color}
       viewBox="0 0 24 24"
       role="img"

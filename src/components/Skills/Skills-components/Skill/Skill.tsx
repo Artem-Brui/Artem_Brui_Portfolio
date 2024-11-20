@@ -12,7 +12,7 @@ const Skill: React.FC<Props> = ({ skill }) => {
 
   const { colorBrand } = useTheme();
 
-  const iconSize = "55px";
+  const iconSize = 55;
   const IconComponent: React.FC<PropsIcons> = logo;
 
   return (

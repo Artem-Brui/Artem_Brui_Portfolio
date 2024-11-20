@@ -6,8 +6,7 @@ const Menu = () => {
   const { theme, colorLight, colorDark } = useTheme();
   
   const iconColor = theme === 'dark' ? colorLight : colorDark;
-  const iconWidth = '40px';
-  const iconHeight = '40px';
+  const iconSize = 40;
 
   return (
     <nav className={styles.navigation}>
@@ -17,8 +16,8 @@ const Menu = () => {
         }}
       >
         <BurgerMenu
-          width={iconWidth}
-          height={iconHeight}
+          width={iconSize}
+          height={iconSize}
           color={iconColor} />
       </a>
     </nav>
