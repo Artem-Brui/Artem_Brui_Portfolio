@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import photo from "../../../../../public/images/photo.webp";
+import photo from "../../../../images/photo.webp";
 import useTheme from "../../../../customHooks/useTheme";
 import styles from "./Photo.module.scss";
 

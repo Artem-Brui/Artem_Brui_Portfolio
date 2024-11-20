@@ -1,4 +1,3 @@
-@import "./index.scss";
 
 .page {
   transition-property: color, background-color, background-image;
@@ -15,18 +14,6 @@
 
 .light {
   @include light-theme;
-}
-
-section {
-  padding-block: 40px;
-}
-
-section:not(:first-of-type) {
-  min-height: 100vh;
-}
-
-section:first-of-type {
-  min-height: calc(100vh - 70px);
 }
 
 .tags {

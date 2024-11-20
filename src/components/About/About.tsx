@@ -3,7 +3,7 @@ import styles from "./About.module.scss";
 import useTheme from "../../customHooks/useTheme";
 import AboutTitle from "./About-components/AboutTitle";
 import AboutText from "./About-components/AboutText";
-import image from '../../../public/images/laptop.webp';
+import image from '../../images/laptop.webp';
 
 const About = () => {
   const { theme } = useTheme();

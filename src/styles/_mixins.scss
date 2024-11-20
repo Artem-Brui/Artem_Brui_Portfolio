@@ -1,57 +1,57 @@
-@import './_variables.scss';
+@use './_variables.scss' as styles;
 
 // #region =========Ubuntu Font=========
 @mixin BG-Text-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 117px;
   line-height: 134px;
   font-weight: 400;
 }
 
 @mixin H1-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 64px;
   line-height: 72px;
   font-weight: 400;
 }
 
 @mixin H2-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 32px;
   line-height: 36px;
   font-weight: 400;
 }
 
 @mixin Button-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
 }
 
 @mixin Article-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 16px;
   line-height: 32px;
   font-weight: 100;
 }
 
 @mixin Para-U {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 16px;
   line-height: 18px;
   font-weight: 100;
 }
 
 @mixin Label-U-M {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
 }
 
 @mixin Label-U-L {
-  font-family: $font-family-ubuntu;
+  font-family: styles.$font-family-ubuntu;
   font-size: 14px;
   line-height: 16px;
   font-weight: 100;
@@ -61,49 +61,49 @@
 
 // #region =========IBM Plex Mono Font=========
 @mixin Number-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 48px;
   line-height: 62px;
   font-weight: 500;
 }
 
 @mixin H2-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 32px;
   line-height: 42px;
   font-weight: 500;
 }
 
 @mixin Logo-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 32px;
   line-height: 42px;
   font-weight: 500;
 }
 
 @mixin Menu-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 24px;
   line-height: 32px;
   font-weight: 400;
 }
 
 @mixin Media-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
 }
 
 @mixin Para-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
 @mixin Code-M {
-  font-family: $font-family-ibm-plex-mono;
+  font-family: styles.$font-family-ibm-plex-mono;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -113,13 +113,13 @@
 
 // #region =========Themes=========
 @mixin dark-theme {
-  background-color: $background-color-dark;
-  color: $font-color-dark;
+  background-color: styles.$background-color-dark;
+  color: styles.$font-color-dark;
 }
 
 @mixin light-theme {
-  background-color: $background-color-light;
-  color: $font-color-light;
+  background-color: styles.$background-color-light;
+  color: styles.$font-color-light;
 }
 
 // #endregion =========Themes=========

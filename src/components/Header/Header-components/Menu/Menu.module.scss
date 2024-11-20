@@ -1,5 +1,3 @@
-@import '../../../../index.scss';
-
 button {
   background: none;
   border: none;
@@ -20,9 +18,9 @@ button {
 }
 
 .light {
-  background-image: url('../../../../public/icons/icon-menu-light.svg');
+  background-image: url('icons/icon-menu-light.svg');
 }
 
 .dark {
-  background-image: url('../../../../public/icons/icon-menu-dark.svg');
+  background-image: url('icons/icon-menu-dark.svg');
 }
