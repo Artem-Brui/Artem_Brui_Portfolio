@@ -16,8 +16,8 @@ const App = () => {
     <div className={classNames("page", theme)}>
       <Header />
       <Switcher />
-      <Home />
-      <About />
+      {/* <Home />
+      <About /> */}
       <Skills />
     </div>
   );

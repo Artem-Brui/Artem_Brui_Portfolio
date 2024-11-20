@@ -1,7 +1,14 @@
 import { ReactNode } from "react";
+import { PropsIcons } from "../../components/SVGs/Icons";
 
 export type ChildrenType = {
   children: ReactNode;
+}
+
+export type SkillType = {
+  name: string;
+  logo: React.FC<PropsIcons>;
+  descreption: string;
 }
 
 export type contextThemeType = {
@@ -11,4 +18,5 @@ export type contextThemeType = {
   colorDark: string;
   colorDarkPlus: string;
   colorBrand: string;
+  currentSkills: SkillType[];
 }

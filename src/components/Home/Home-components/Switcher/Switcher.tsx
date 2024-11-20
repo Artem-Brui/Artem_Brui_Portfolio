@@ -12,7 +12,7 @@ const Switcher = () => {
 
   const switcherBackColor = isThemeDark ? colorDark : colorLight;
   const iconBoxColor = isThemeDark ? colorLight : colorDark;
-  const iconBoxTransform = isThemeDark ? 0 : 19;
+  const iconBoxTransform = isThemeDark ? 0 : 18;
   const iconWidth = "15px";
   const iconHeight = "15px";
 
