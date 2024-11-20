@@ -1,21 +1,11 @@
-import { useState } from "react";
 import { Bootstrap, Bulma, Css, Express, Git, Html, Javascript, Mongodb, React, Redux, Sass, Typescript } from "../../components/SVGs/Icons.tsx";
 
-import ThemeContext from "./service.ts";
-import { ChildrenType } from "./types.ts";
-
-export const ContextProvider: React.FC<ChildrenType> = ({ children }) => {
-  const [theme, setTheme] = useState("dark");
-
-  const toggleTheme = () => {
-    setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
-  };
-
-  const colorLight = '#FFFFFF';
-  const colorDark = '#292F36';
-  const colorDarkPlus = '#1A1E23';
-  const colorBrand = '#569cd6';
-  const currentSkills = [
+const contextData = {
+  colorLight: '#FFFFFF',
+  colorDark: '#292F36',
+  colorDarkPlus: '#1A1E23',
+  colorBrand: '#569cd6',
+  currentSkills: [
     {
       name: 'html',
       logo: Html,
@@ -77,14 +67,6 @@ export const ContextProvider: React.FC<ChildrenType> = ({ children }) => {
       descreption: 'A database where data is stored as JSON-like objects, perfect for modern applications.',  
     },
   ]
+}
 
-  return (
-    <ThemeContext.Provider
-      value={{ theme, toggleTheme, colorLight, colorDark, colorDarkPlus, colorBrand, currentSkills }}
-    >
-      {children}
-    </ThemeContext.Provider>
-  );
-};
-
-export default ContextProvider;
+export default contextData;
