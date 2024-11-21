@@ -11,13 +11,13 @@
   backdrop-filter: blur(4px);
 }
 
-.text,
+.paragraph,
 .greating {
   padding-left: 16px;
 }
 
 .greating,
-.text > span {
+.paragraph > span {
   color: $Brand-1;
 }
 

@@ -1,30 +1,46 @@
 import classNames from "classnames";
 import useTheme from "../../../../customHooks/useTheme";
 import styles from "./Counter.module.scss";
+import { content } from "../../../../services/content";
+
+const counterContent = [
+  {
+    name: "Self-Driven Projects",
+    number: content.HomeSection.counter.projectsAmount,
+  },
+  {
+    name: "Years of Experiance",
+    number: new Date().getFullYear() - Number(content.HomeSection.counter.carrierStarted),
+  },
+  {
+    name: "Technical Proficiencies",
+    number: content.HomeSection.counter.skillsAmount,
+  },
+];
 
 const Counter = () => {
   const { theme } = useTheme();
 
-  const containerClass = theme === 'dark' ? styles.container_dark : styles.container_light;
-  const textColorClass = theme === 'dark' ? styles.font_dark : styles.font_light;
-  
+  const containerClass =
+    theme === "dark" ? styles.container_dark : styles.container_light;
+  const textColorClass =
+    theme === "dark" ? styles.font_dark : styles.font_light;
+
   const containerStyle = classNames(styles.counter, containerClass);
   const textStyle = classNames(styles.counter_text, textColorClass);
 
   return (
     <ul className={containerStyle}>
-      <li className={styles.counter_item}>
-        <p className={styles.counter_number}>3</p>
-        <p className={textStyle}>Own Projects</p> 
-      </li>
-      <li className={styles.counter_item}>
-        <p className={styles.counter_number}>3</p>
-        <p className={textStyle}>Years of Experiance</p> 
-      </li>
-      <li className={styles.counter_item}>
-        <p className={styles.counter_number}>14</p>
-        <p className={textStyle}>Development Tools</p> 
-      </li>
+      {counterContent.map((item, index) => {
+        return (
+          <li
+            key={index}
+            className={styles.counter_item}>
+              <p className={styles.counter_number}>{item.number}</p>
+              <p className={textStyle}>{item.name}</p>
+          </li>
+        );
+      })}
     </ul>
   );
 };

@@ -3,12 +3,14 @@
   gap: 20px;
 }
 
-.text {
-  margin-inline: 24px;
+.text__container {
+  display: grid;
+  gap: 5px;
+  margin-left: 24px;
 }
 
 .greating_text {
-  @include H2-M;
+  @include H2-U;
 
   & span {
     color: $Brand-1;

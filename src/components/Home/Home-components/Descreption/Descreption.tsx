@@ -1,16 +1,16 @@
+import { content } from "../../../../services/content";
 import Tag from "../Tag";
 import styles from "./Descreption.module.scss";
-import classNames from "classnames";
 
 const Descreption = () => {
+  const text = content.HomeSection.descreption;
   return (
     <>
       <div className={styles.descreption}>
         <Tag content={"<p>"} />
-
-        <p className={classNames(styles.text, styles.descreption_text)}>
-          Dedicated to clean code, seamless collaboration, and helping your team
-          deliver outstanding results.
+        <p
+          className={styles.descreption_text}>
+          {text}
         </p>
 
         <Tag content={"<p>"} />

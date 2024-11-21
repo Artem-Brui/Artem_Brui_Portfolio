@@ -1,10 +1,12 @@
+import { content } from "../../../../services/content";
 import styles from "./AboutTitle.module.scss";
 
 const AboutTitle = () => {
+  const sectionName = content.AboutSection.sectionName;
   return (
     <h3
       className={styles.head}>
-      About me
+      {sectionName}
     </h3>
   );
 };

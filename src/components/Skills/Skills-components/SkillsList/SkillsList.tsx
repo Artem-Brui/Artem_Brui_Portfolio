@@ -1,13 +1,13 @@
-import useTheme from "../../../../customHooks/useTheme";
+import { content } from "../../../../services/content";
 import Skill from "../Skill/Skill";
 import styles from "./SkillsList.module.scss";
 
 const SkillsList = () => {
-  const { currentSkills } = useTheme();
+  const skillsList = [...content.SkillsSection.skillsList];
   
   return (
     <ul className={styles.list}>
-      {currentSkills.map((item, i) => {
+      {skillsList.map((item, i) => {
         
         return (
           <Skill key={i} skill={item} />

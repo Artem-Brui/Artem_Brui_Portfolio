@@ -3,10 +3,8 @@
   gap: 20px;
 }
 
-.text {
-  margin-inline: 24px;
-}
-
 .descreption_text {
   @include Para-M;
+
+  margin-inline: 24px;
 }

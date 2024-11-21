@@ -6,35 +6,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 18px;
-  gap: 40px;
+  gap: 60px;
   border-radius: 80px;
 
   &_item {
-    width: 140px;
     display: flex;
-
-    &:last-of-type {
-      position: relative;
-      left: -29px;
-    }
+    gap: 15px;
   }
 }
 
 .counter_number {
   @include Number-M;
 
+  width: 65px;
   color: $Brand-1;
-  margin-right: 16px;
-  position: relative;
-  top: -11px;
+  text-align: right;
+  line-height: 45px
 }
 
 .counter_text {
   @include Para-M;
 
-  margin-right: 16px;
-  color: $White;
+  width: 130px;
 }
 
 .font_dark {

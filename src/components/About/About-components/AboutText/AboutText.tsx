@@ -1,35 +1,25 @@
+import { content } from "../../../../services/content";
 import Tag from "../../../Home/Home-components/Tag";
 import styles from "./AboutText.module.scss";
 
 const AboutText = () => {
+  const greating = content.AboutSection.greating;
+  const paragraphsList = content.AboutSection.paragraphsList;
+
   return (
     <div className={styles.text__container}>
       <Tag content="<p>" />
-      <p className={styles.greating}>Hello!</p>
+      <p className={styles.greating}>{greating}</p>
 
-      <p className={styles.text}>
-        My name is <span className="highlight">Artem</span> and I specialize in
-        Web Developement that utilizes <span>JavaScript</span>,{" "}
-        <span>TypeScript</span>, <span>React</span>, <span>Express</span>, and{" "}
-        <span>MongoDB</span> etc.
-      </p>
-
-      <p className={styles.text}>
-        I am a highly motivated individual and eternal optimist dedicated to
-        writing clear, concise, robust code that works. Striving to never stop
-        learning and improving.
-      </p>
-
-      <p className={styles.text}>
-        When I'm not coding, I am writing bolgs, reading, or picking up some new
-        hands-on art project like photography.
-      </p>
-
-      <p className={styles.text}>
-        With a strong focus on problem-solving, client and project management,
-        and analytical thinking, I am self-motivated and equipped to deliver
-        robust web solutions that align with business objectives.
-      </p>
+      {paragraphsList.map((parag, index) => {
+        return (
+          <p
+            key={index}
+            className={styles.paragraph}>
+            {parag.paragraph}
+          </p>
+        );
+      })}
 
       <Tag content="<p>" />
     </div>

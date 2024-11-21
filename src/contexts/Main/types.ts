@@ -18,5 +18,4 @@ export type contextThemeType = {
   colorDark: string;
   colorDarkPlus: string;
   colorBrand: string;
-  currentSkills: SkillType[];
 }
