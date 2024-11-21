@@ -1,0 +1,68 @@
+.works {
+  background-color: $BG-2;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 150%;
+    height: 100%;
+    background-image: url("../../images/backgroundHeads.webp");
+    background-size: contain;
+    position: absolute;
+    top: 0;
+  }
+
+  & * {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.dark {
+  background-color: $BG-2;
+
+  &::after {
+    opacity: 0.4;
+  }
+}
+
+.light {
+  background-color: $White;
+
+  &::after {
+    opacity: 0.12;
+  }
+}
+
+.works__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer {
+  width: 70%;
+  max-width: 300px;
+}
+
+.link {
+  @include Button-U;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 50px;
+  border-radius: 8px;
+  color: $BG-1;
+  background-color: $Brand-1;
+  
+
+  &:hover {
+    background-color: #2876b6;
+  }
+
+  &:active {
+    scale: .95;
+  }
+}

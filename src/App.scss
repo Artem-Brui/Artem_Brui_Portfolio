@@ -1,19 +1,17 @@
 
 .page {
-  transition-property: color, background-color, background-image;
-  transition-duration: 500ms;
 
-  & > * {
-    padding-inline: 24px;
+  & > * > * {
+    margin-inline: 24px;
   }
 }
 
 .dark {
-  @include dark-theme;
+  color: $font-color-dark;
 }
 
 .light {
-  @include light-theme;
+  color: $font-color-light;
 }
 
 .tags {

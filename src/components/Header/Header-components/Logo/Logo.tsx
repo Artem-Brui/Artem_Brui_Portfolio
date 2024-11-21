@@ -1,11 +1,12 @@
+import Tag from "../../../Home/Home-components/Tag";
 import styles from "./Logo.module.scss";
 
 const Logo = () => {
   return (
-    <h1 className={styles.logo}>
-      <span>{"<A/>"}</span>
-      Artem Brui
-    </h1>
+    <div>
+      <Tag content="<A/>" />
+      <h1 className={styles.title}>Artem Brui</h1>
+    </div>
   );
 };
 

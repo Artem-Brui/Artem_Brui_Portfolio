@@ -27,14 +27,14 @@ const skills = [
     descreption: 'An extension of CSS that adds variables, nesting, and other features to make styling easier and more organized.',
   },
   {
-    name: 'javascript',
-    logo: Javascript,
-    descreption: 'A programming language that makes websites interactive (e.g., buttons, pop-ups).',
-  },
-  {
     name: 'git',
     logo: Git,
     descreption: 'A version control system for tracking and managing code changes, great for teamwork.',
+  },
+  {
+    name: 'javascript',
+    logo: Javascript,
+    descreption: 'A programming language that makes websites interactive (e.g., buttons, pop-ups).',
   },
   {
     name: 'typescript',
@@ -111,5 +111,10 @@ export const content = {
     sectionName: 'Skills',
     sectionHeader: 'I am striving to never stop learning and improving',
     skillsList: skills,
+  },
+  WorksSection: {
+    sectionName: 'Works',
+    sectionHeader: 'I had the pleasure of working with these awesome projects',
+    works: projects,
   }
 }

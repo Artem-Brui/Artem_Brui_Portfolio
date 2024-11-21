@@ -1,17 +1,11 @@
-import classNames from "classnames";
 import photo from "../../../../images/photo.webp";
-import useTheme from "../../../../customHooks/useTheme";
 import styles from "./Photo.module.scss";
 
 const Photo = () => {
-  const { theme } = useTheme();
-
-  const borderClass = theme === "dark" ? null : styles.light;
-
   return (
     <div className={styles.container}>
       <img
-        className={classNames(styles.myPhoto, borderClass)}
+        className={styles.myPhoto}
         src={photo}
         alt="My photo"
       />

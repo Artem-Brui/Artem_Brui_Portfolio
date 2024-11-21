@@ -5,23 +5,15 @@ import classNames from "classnames";
 import useTheme from "../../customHooks/useTheme";
 
 const Switcher = () => {
-  const { theme, toggleTheme, colorBrand, colorDark, colorLight } = useTheme();
-  const isThemeDark = theme === "dark";
-  
-  const [isDark, setIsDark] = useState(isThemeDark);
+  const { theme, toggleTheme, colorLight } = useTheme();
 
-  const switcherBackColor = isThemeDark ? colorLight : colorDark;
-  const iconBoxTransform = isThemeDark ? 0 : 19;
-  const iconBoxSize = 25;
-  const iconSize = iconBoxSize - 4;
+  const [isDark, setIsDark] = useState(theme === "dark");
 
-  const iconBoxStyles: React.CSSProperties = {
-    transform: `translateX(${iconBoxTransform}px)`,
-  };
+  const themeClassName = isDark ? styles.dark : styles.light;
+  const iconColor = isDark ? colorLight : "#bcbc02";
+  const iconClassName = isDark ? styles.icon__dark : styles.icon__light;
 
-  const switcherStyles = {
-    backgroundColor: switcherBackColor,
-  };
+  const iconSize = 21;
 
   const handleClick = () => {
     toggleTheme();
@@ -29,11 +21,10 @@ const Switcher = () => {
   };
 
   return (
-    <div className={styles.switcherBox}>
+    <div className={classNames(styles.switcherBox, themeClassName)}>
       <label
         htmlFor="switcher"
-        className={styles.switcher}
-        style={switcherStyles}
+        className={classNames(styles.switcher, themeClassName)}
       >
         <input
           id="switcher"
@@ -43,17 +34,26 @@ const Switcher = () => {
         />
         <div>
           <i
-            className={classNames(styles.icon, { [styles.hiden]: isThemeDark })}
-            style={iconBoxStyles}
+            className={
+              classNames(
+                styles.icon,
+                iconClassName,
+                {
+                  [styles.hiden]: isDark,
+                })}
           >
-            <Sun width={iconSize} height={iconSize} color={"#f4f47c"} />
+            <Sun width={iconSize} height={iconSize} color={iconColor} />
           </i>
 
           <i
-            className={classNames(styles.icon, { [styles.hiden]: !isThemeDark })}
-            style={iconBoxStyles}
+            className={classNames(
+              styles.icon,
+              iconClassName,
+              {
+                [styles.hiden]: !isDark,
+              })}
           >
-            <Moon width={iconSize} height={iconSize} color={colorBrand} />
+            <Moon width={iconSize} height={iconSize} color={iconColor} />
           </i>
         </div>
       </label>

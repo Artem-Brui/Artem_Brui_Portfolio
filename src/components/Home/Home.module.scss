@@ -4,3 +4,13 @@
   display: grid;
   grid-gap: 60px;
 }
+
+.dark {
+  background-color: $BG-1;
+  border-color: $BG-1;
+}
+
+.light {
+  background-color: $White;
+  border-color: $White;
+}
