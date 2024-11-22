@@ -1,19 +1,21 @@
 import classNames from "classnames";
 import useTheme from "../../../../customHooks/useTheme";
 import styles from "./Counter.module.scss";
-import { content } from "../../../../services/content";
+import { content } from "../../../../content/mainContent_EN";
 
 const counterContent = [
   {
-    name: "Self-Driven Projects",
+    name: content.HomeSection.counter.projectsTitle,
     number: content.HomeSection.counter.projectsAmount,
   },
   {
-    name: "Years of Experiance",
-    number: new Date().getFullYear() - Number(content.HomeSection.counter.carrierStarted),
+    name: content.HomeSection.counter.carrierTitle,
+    number:
+      new Date().getFullYear() -
+      Number(content.HomeSection.counter.carrierStarted),
   },
   {
-    name: "Technical Proficiencies",
+    name: content.HomeSection.counter.skillsTitle,
     number: content.HomeSection.counter.skillsAmount,
   },
 ];
@@ -33,11 +35,9 @@ const Counter = () => {
     <ul className={containerStyle}>
       {counterContent.map((item, index) => {
         return (
-          <li
-            key={index}
-            className={styles.counter_item}>
-              <p className={styles.counter_number}>{item.number}</p>
-              <p className={textStyle}>{item.name}</p>
+          <li key={index} className={styles.counter_item}>
+            <p className={styles.counter_number}>{item.number}</p>
+            <p className={textStyle}>{item.name}</p>
           </li>
         );
       })}

@@ -1,4 +1,4 @@
-import { content } from "../../../../services/content";
+import { content } from "../../../../content/mainContent_EN";
 import Tag from "../../../Home/Home-components/Tag";
 import styles from "./AboutText.module.scss";
 
@@ -13,9 +13,7 @@ const AboutText = () => {
 
       {paragraphsList.map((parag, index) => {
         return (
-          <p
-            key={index}
-            className={styles.paragraph}>
+          <p key={index} className={styles.paragraph}>
             {parag.paragraph}
           </p>
         );

@@ -65,17 +65,67 @@ const skills = [
 
 const projects = [
   {
-    key: 'value'
+    name: 'The MET Museum',
+    link: 'https://artem-brui.github.io/MET-Landing-page',
+    buttonTitle: 'Demo Link',
+    previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
+    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
   },
   {
-    key: 'value'
+    name: '2048 Game',
+    link: 'https://artem-brui.github.io/Game-2048/',
+    buttonTitle: 'Demo Link',
+    previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
+    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+  },
+];
+
+const jobs = [
+  {
+    company: 'DCI Digital Career Institute',
+    location: 'Berlin, Germany',
+    jobType: 'Remote',
+    role: 'Tutor on a Full Stack Web Developer course',
+    achievements: [
+      "Enhancing student's understanding of key concepts covered in their courses.",
+      'Providing personalized support to help students catch up and master challenging topics.',
+      'Сonducting joint live-coding during practice on topics that need to be mastered better',
+    ],
+    startDate: '01.05.2024',
+    endDate: '',
   },
   {
-    key: 'value'
+    company: 'Air Team',
+    location: 'Brno, Czech Republic',
+    jobType: 'Hybrid',
+    role: 'Digital Marketing Specialist',
+    achievements: [
+      'Managing advertising campaigns on Facebook Ads and Google Ads.',
+      'Crafting engaging creatives and ads that resonated with target audiences.',
+      'Developing a new WordPress website using Elementor, where I designed custom elements with HTML and CSS to ensure a seamless user experience.',
+    ],
+    startDate: '01.01.2021',
+    endDate: '01.10.2023',
+  },
+  {
+    company: 'Ukrainian Agricultural Market',
+    location: 'Kyiv, Ukraine',
+    jobType: 'On-site',
+    role: 'Head of Procurement Department in Agriculture',
+    achievements: [
+      'Establishing and developing a procurement department from scratch, including staff selection and training, which resulted in a high- performing team.',
+      'Managing the domestic procurement of soybeans and oilseeds in the Ukrainian market.',
+      'Executing foreign trade contracts for exporting grains and oilseeds through Black Sea ports.',
+    ],
+    startDate: '01.01.2009',
+    endDate: '31.12.2020',
   },
 ];
 
 export const content = {
+  Header: {
+    ownerName: 'Artem Brui',
+  },
   HomeSection: {
     greating: [
       "Hey,",
@@ -83,10 +133,14 @@ export const content = {
       "Full Stack Developer"
     ],
     descreption: "Dedicated to clean code, seamless collaboration, and helping your team deliver outstanding results.",
+    callToAction: "Let's Talk",
     counter: {
-      projectsAmount: projects.length,
+        projectsAmount: projects.length,
+        projectsTitle: 'Self-Driven Projects',
       carrierStarted: '2021',
-      skillsAmount: skills.length
+      carrierTitle: 'Years of Experiance',
+      skillsAmount: skills.length,
+      skillsTitle: 'Technical Proficiencies',
     }
   },
   AboutSection: {
@@ -116,5 +170,10 @@ export const content = {
     sectionName: 'Works',
     sectionHeader: 'I had the pleasure of working with these awesome projects',
     works: projects,
-  }
+  },
+  ExperienceSection: {
+    sectionName: 'Experience',
+    sectionHeader: 'I’ve had the privilege of contributing to amazing teams and impactful projects',
+    jobs: jobs,
+  },
 }
