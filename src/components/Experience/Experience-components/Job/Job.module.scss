@@ -1,0 +1,55 @@
+.jobs__item {
+  list-style-type: disc;
+  padding-bottom: 20px;
+  padding-left: 10px;
+
+  & > p,
+  & > li {
+    margin-bottom: 10px;
+  }
+}
+
+.role {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 25px;
+  color: $Brand-1;
+  text-transform: uppercase;
+}
+
+.company {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.jobType {
+  font-weight: 200;
+}
+
+.period {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.location {
+  font-style: italic;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.challenges,
+.achievements {
+  list-style-type: disc;
+  margin-top: 20px;
+
+  & > span {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}
+
+.challenge,
+.achievement {
+  margin-left: 30px;
+}

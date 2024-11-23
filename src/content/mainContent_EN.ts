@@ -86,10 +86,13 @@ const jobs = [
     location: 'Berlin, Germany',
     jobType: 'Remote',
     role: 'Tutor on a Full Stack Web Developer course',
+    challenges: [
+      "Compressed timeframes for studying new topics to the level of teaching them.",
+    ],
     achievements: [
-      "Enhancing student's understanding of key concepts covered in their courses.",
-      'Providing personalized support to help students catch up and master challenging topics.',
-      'Сonducting joint live-coding during practice on topics that need to be mastered better',
+      "Learned how to effectively study new material in a time-limited environment.",
+      'During the period of work and training, more than 70 practical tasks were solved (SCSS, JavaScript, TypeScript, React, Express, MongoDB).',
+      'Conducting educational live-coding with solving tasks in real time with students.',
     ],
     startDate: '01.05.2024',
     endDate: '',
@@ -100,9 +103,13 @@ const jobs = [
     jobType: 'Hybrid',
     role: 'Digital Marketing Specialist',
     achievements: [
-      'Managing advertising campaigns on Facebook Ads and Google Ads.',
-      'Crafting engaging creatives and ads that resonated with target audiences.',
-      'Developing a new WordPress website using Elementor, where I designed custom elements with HTML and CSS to ensure a seamless user experience.',
+      'Increase in sales for some items by more than 50% due to the advertising I created.',
+      'Creating the basic structure of a new website using Elementor (WordPress) and custom elements written by me.',
+      'Implementation of a new site into the corporate Hubspot system, creation and configuration of all necessary connections.',
+    ],
+    challenges: [
+      "Self-study of new technologies such as Google Ads, embedding and customization Ads Analytical Tools.",
+      "Create custom website elements using HTML/CSS, as new technologies for themselves. Studying in a short time.",
     ],
     startDate: '01.01.2021',
     endDate: '01.10.2023',
@@ -113,11 +120,15 @@ const jobs = [
     jobType: 'On-site',
     role: 'Head of Procurement Department in Agriculture',
     achievements: [
-      'Establishing and developing a procurement department from scratch, including staff selection and training, which resulted in a high- performing team.',
-      'Managing the domestic procurement of soybeans and oilseeds in the Ukrainian market.',
-      'Executing foreign trade contracts for exporting grains and oilseeds through Black Sea ports.',
+      'Three purchasing departments were created from scratch.',
+      'More than Fifty procurement specialists were trained in effective procurement.',
+      'Many contracts for the supply of grain in the amount of more than One million tons have been signed and fulfilled.',
     ],
-    startDate: '01.01.2009',
+    challenges: [
+      'Implementation of an IT solution into the existing system of interaction between employees.',
+      "Expanding the department's activities to include fulfilling export supply contracts.",
+    ],
+    startDate: '01.09.2009',
     endDate: '31.12.2020',
   },
 ];
@@ -175,5 +186,9 @@ export const content = {
     sectionName: 'Experience',
     sectionHeader: 'I’ve had the privilege of contributing to amazing teams and impactful projects',
     jobs: jobs,
+    titles: {
+      challenges: 'Challenges',
+      achievements: 'Achievements',
+    }
   },
 }

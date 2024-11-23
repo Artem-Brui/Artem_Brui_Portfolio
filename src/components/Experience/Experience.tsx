@@ -3,7 +3,7 @@ import { content } from "../../content/mainContent_EN";
 import SectionHead from "../SectionHead";
 import styles from "./Experience.module.scss";
 import useTheme from "../../customHooks/useTheme";
-import computer from "../../images/computer.webp";
+import Job from "./Experience-components/Job";
 
 const Experience = () => {
   const { theme } = useTheme();
@@ -12,12 +12,18 @@ const Experience = () => {
 
   const title = content.ExperienceSection.sectionName;
   const textHead = content.ExperienceSection.sectionHeader;
-
-  const worksList = [...content.WorksSection.works];
+  const jobList = [...content.ExperienceSection.jobs];
 
   return (
     <section className={classNames(styles.experience, sectionClass)}>
       <SectionHead title={title} text={textHead} />
+      <ul className={styles.jobs__list}>
+        {jobList.map((job, index) => {
+          return (
+            <Job key={index} job={job} jobIndex={index} />
+          )
+        })}
+      </ul>
     </section>
   );
 };
