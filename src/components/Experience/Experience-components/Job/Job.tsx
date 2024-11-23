@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import styles from "./Job.module.scss";
 import { dateCutter, periodCounter } from "./services";
 import { content } from "../../../../content/mainContent_EN";

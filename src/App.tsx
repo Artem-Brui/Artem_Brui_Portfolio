@@ -7,7 +7,6 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About/About.tsx";
 import Skills from "./components/Skills/Skills.tsx";
-import Switcher from "./components/Switcher/Switcher.tsx";
 import Works from "./components/Works/Works.tsx";
 import Experience from "./components/Experience/Experience.tsx";
 
@@ -17,7 +16,6 @@ const App = () => {
   return (
     <div className={classNames("page", theme)}>
       <Header />
-      <Switcher />
       <Home />
       <About />
       <Skills />

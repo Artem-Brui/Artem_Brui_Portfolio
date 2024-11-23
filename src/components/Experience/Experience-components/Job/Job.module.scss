@@ -1,5 +1,5 @@
 .jobs__item {
-  list-style-type: disc;
+  // list-style-type: disc;
   padding-bottom: 20px;
   padding-left: 10px;
 
@@ -15,6 +15,18 @@
   line-height: 25px;
   color: $Brand-1;
   text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: $Brand-1;
+    border-radius: 50%;
+    position: absolute;
+    left: -56px;
+  }
 }
 
 .company {

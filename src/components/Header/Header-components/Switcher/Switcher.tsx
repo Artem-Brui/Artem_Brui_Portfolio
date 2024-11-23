@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./Switcher.module.scss";
-import { Sun, Moon } from "../SVGs/Icons";
+import { Sun, Moon } from "../../../SVGs/Icons";
 import classNames from "classnames";
-import useTheme from "../../customHooks/useTheme";
+import useTheme from "../../../../customHooks/useTheme";
 
 const Switcher = () => {
   const { theme, toggleTheme, colorLight } = useTheme();

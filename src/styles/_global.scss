@@ -3,12 +3,13 @@
 
 
 * {
+  will-change: color, background-color;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: 
-    background-color 500ms, 
-    color 500ms;
+    background-color 300ms ease-in-out,
+    opacity 300ms ease-in-out;
 }
 
 a {
@@ -29,4 +30,10 @@ section:not(:first-of-type) {
 
 section:first-of-type {
   min-height: calc(100vh - 70px);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
