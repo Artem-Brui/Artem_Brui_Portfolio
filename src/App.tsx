@@ -9,6 +9,7 @@ import About from "./components/About/About.tsx";
 import Skills from "./components/Skills/Skills.tsx";
 import Works from "./components/Works/Works.tsx";
 import Experience from "./components/Experience/Experience.tsx";
+import Contact from "./components/Contact/Contact.tsx";
 
 const App = () => {
   const { theme } = useTheme();
@@ -16,11 +17,12 @@ const App = () => {
   return (
     <div className={classNames("page", theme)}>
       <Header />
-      <Home />
+      {/* <Home />
       <About />
       <Skills />
       <Works />
-      <Experience />
+      <Experience /> */}
+      <Contact />
     </div>
   );
 };

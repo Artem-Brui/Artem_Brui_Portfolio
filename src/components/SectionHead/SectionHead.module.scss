@@ -6,34 +6,36 @@
   @include H1-U;
   
   justify-self: center;
+  font-weight: 200;
   color: $Brand-1;
   width: min-content;
-  border-bottom: 5px solid $Brand-1;
+  padding-bottom: 20px;
+  border-bottom: 2px solid $Brand-1;
   margin-bottom: 30px;
   position: relative;
 
   &::after {
     content: '';
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: $Brand-1;
     position: absolute;
-    left: -17px;
-    bottom: -11px;
+    left: -12px;
+    bottom: -8px;
   }
 
   &::before {
     content: '';
     display: block;
-    width: 18px;
-    height: 18px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background-color: $Brand-1;
     position: absolute;
-    right: -17px;
-    bottom: -11px;
+    right: -12px;
+    bottom: -8px;
   }
 }
 

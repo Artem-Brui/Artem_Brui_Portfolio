@@ -191,4 +191,22 @@ export const content = {
       achievements: 'Achievements',
     }
   },
+  ContactSection: {
+    sectionName: "Contact",
+    sectionHeader: "I will be happy to consider any proposals for cooperation",
+    formHeader: "Send Me A Message",
+    form: {
+      formLabels: {
+        name: "Your name",
+        email: "Your email",
+        message: "Your message",
+        button: "Send Message",
+      },
+      formPlaceholders: {
+        name: "Enter your name",
+        email: "Enter your email",
+        message: "Enter your message",
+      },
+    }
+  },
 }
