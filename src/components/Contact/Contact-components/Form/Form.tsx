@@ -31,6 +31,8 @@ const Form = () => {
   
   const handleSubmitForm: React.FormEventHandler<HTMLInputElement> = (event) => {
     event.preventDefault();
+
+    
   }
 
   return (
@@ -39,7 +41,7 @@ const Form = () => {
         {content.ContactSection.formHeader}
       </h3>
 
-      <label className={styles.form__name}>
+      <label className={classNames(styles.fields_labels, styles.label_name)}>
         {formData.formLabels.name}
         <input
           type="name"
@@ -48,7 +50,7 @@ const Form = () => {
         />
       </label>
 
-      <label className={styles.form__email}>
+      <label className={classNames(styles.fields_labels, styles.label_email)}>
         {formData.formLabels.email}
         <input
           type="email"
@@ -57,7 +59,7 @@ const Form = () => {
         />
       </label>
 
-      <label className={styles.form__message}>
+      <label className={classNames(styles.fields_labels, styles.label_message)}>
         {formData.formLabels.message}
         <textarea
           placeholder={formData.formPlaceholders.message}
@@ -67,11 +69,12 @@ const Form = () => {
         />
       </label>
 
-      <label className={styles.form__button}>
+      <label className={styles.label_button}>
         <input
+          className={styles.input_button}
           type="submit"
           value={formData.formLabels.button}
-          onSubmit={handleSubmitForm}/>
+          onSubmit={handleSubmitForm} />
       </label>
     </form>
   );

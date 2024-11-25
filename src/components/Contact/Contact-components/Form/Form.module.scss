@@ -2,8 +2,8 @@
   @include Para-U;
 
   width: calc(100vw - ($margin-inline-mobile * 2));
-  max-width: 400px;
-  justify-self: center;
+  max-width: 600px;
+  font-size: 18px;
   display: grid;
   grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(2, minmax(0px, 1fr));
@@ -15,34 +15,6 @@
     display: flex;
     flex-direction: column;
     color: $Brand-1;
-    position: relative;
-
-    &:not(&:last-of-type) {
-      border-bottom: 1px solid $Brand-1;
-      padding-bottom: 8px;
-
-      & input,
-      & textarea {
-        margin-top: 20px;
-        background-color: inherit;
-        border: none;
-
-        &:focus {
-          outline: none;
-          caret-color: $Brand-1;
-
-          &::placeholder {
-            color: rgba($White, 0);
-          }
-        }
-      }
-
-      & textarea {
-        height: 17px;
-        overflow: hidden;
-        resize: none;
-      }
-    }
   }
 }
 
@@ -61,24 +33,71 @@
   border-radius: 32px 0 32px 0;
 }
 
-.form__name {
+.fields_labels {
+  border-bottom: 1px solid $Brand-1;
+  padding-bottom: 8px;
+
+  & > * {
+    margin-top: 20px;
+    background-color: inherit;
+    border: none;
+
+    &:focus {
+      outline: none;
+      caret-color: $Brand-1;
+
+      &::placeholder {
+        color: rgba($White, 0);
+      }
+    }
+  }
+
+  & textarea {
+    height: 17px;
+    overflow: hidden;
+    resize: none;
+  }
+}
+
+.label_name {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-.form__email {
+.label_email {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.form__message {
+.label_message {
   grid-area: 3 / 1 / 4 / 3;
 }
 
-.form__button {
+.label_button {
   grid-area: 4 / 1 / 5 / 3;
+  justify-self: center;
+  position: relative;
+}
+
+.input_button {
+  @include Button-U;
+
+  cursor: pointer;
+  background-color: $Brand-1;
+  font-weight: 300;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: #2876b6;
+  }
+
+  &:active {
+    scale: .95;
+  }
 }
 
 .dark {
-  & label:not(& label:last-of-type) {
+  & label {
     & input,
     & textarea {
       color: $White;
@@ -91,13 +110,13 @@
 }
 
 .light {
-  & label:not(& label:last-of-type) {
+  & label {
     & input,
     & textarea {
       color: $BG-2;
 
       &::placeholder {
-        color: rgba($BG-2, 0.3);
+        color: rgba($BG-2, 0.4);
       }
     }
   }

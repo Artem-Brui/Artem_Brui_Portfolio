@@ -197,9 +197,9 @@ export const content = {
     formHeader: "Send Me A Message",
     form: {
       formLabels: {
-        name: "Your name",
-        email: "Your email",
-        message: "Your message",
+        name: "Your name *",
+        email: "Your email *",
+        message: "Your message *",
         button: "Send Message",
       },
       formPlaceholders: {
