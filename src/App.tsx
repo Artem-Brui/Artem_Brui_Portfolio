@@ -10,6 +10,7 @@ import Skills from "./components/Skills/Skills.tsx";
 import Works from "./components/Works/Works.tsx";
 import Experience from "./components/Experience/Experience.tsx";
 import Contact from "./components/Contact/Contact.tsx";
+import Footer from "./components/Footer/Footer.tsx";
 
 const App = () => {
   const { theme } = useTheme();
@@ -23,6 +24,7 @@ const App = () => {
       <Works />
       <Experience />
       <Contact />
+      <Footer />
     </div>
   );
 };

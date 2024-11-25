@@ -21,15 +21,15 @@
 .form__header {
   @include Menu-M;
 
-  width: calc(100vw - ($margin-inline-mobile * 2));
-  max-width: 325px;
+  // width: calc(100vw - ($margin-inline-mobile * 2));
+  // max-width: 225px;
   align-self: center;
   justify-self: center;
   grid-area: 1 / 1 / 2 / 3;
   text-align: center;
   color: $Brand-1;
   border: 2px solid $Brand-1;
-  padding-block: 17px;
+  padding: 10px;
   border-radius: 32px 0 32px 0;
 }
 

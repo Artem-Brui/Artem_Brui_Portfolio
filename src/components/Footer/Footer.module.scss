@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding-block: 24px;
+  gap: 30px;
+  position: relative;
+
+  & > div {
+    gap: 40px;
+  }
+
+  & > p {
+    @include Para-U;
+
+    font-size: 15px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: calc(100vw - $margin-inline-mobile * 2);
+    height: 2px;
+    background-color: $Grey;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.dark {
+  background-color: $BG-2;
+}
+
+.light {
+  background-color: $White;
+}
+
+

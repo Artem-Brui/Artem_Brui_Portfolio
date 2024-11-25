@@ -194,7 +194,7 @@ export const content = {
   ContactSection: {
     sectionName: "Contact",
     sectionHeader: "I will be happy to consider any proposals for cooperation",
-    formHeader: "Send Me A Message",
+    formHeader: "Send Me a Message",
     form: {
       formLabels: {
         name: "Your name *",
@@ -208,5 +208,8 @@ export const content = {
         message: "Enter your message",
       },
     }
+  },
+  Footer: {
+    textRights: '© 2024 Artem Brui. All rights reserved.',
   },
 }

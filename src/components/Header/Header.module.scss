@@ -10,7 +10,7 @@
   &::after {
     content: '';
     display: block;
-    width: calc(100vw - 48px);
+    width: calc(100vw - $margin-inline-mobile * 2);
     height: 2px;
     background-color: $Grey;
     position: absolute;
