@@ -18,13 +18,13 @@ const App = () => {
   return (
     <div className={classNames("page", theme)}>
       <Header />
-      <Home />
-      <About />
+      {/* <Home />
+      <About /> */}
       <Skills />
-      <Works />
+      {/* <Works />
       <Experience />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

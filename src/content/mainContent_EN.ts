@@ -1,64 +1,82 @@
-import { Bootstrap, Bulma, Css, Express, Git, Html, Javascript, Mongodb, React, Redux, Sass, Typescript } from "../components/SVGs/Icons";
+import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Typescript } from "../components/SVGs/Icons";
 
 const skills = [
   {
     name: 'html',
     logo: Html,
+    logoColor: '#e95829',
     descreption: 'The foundation of any website, a markup language for structuring and displaying content.',
   },
   {
     name: 'css',
     logo: Css,
+    logoColor: '#27a3d9',
     descreption: 'A language for styling web pages, defining colors, fonts, spacing, and other visual elements.',
   },
   {
     name: 'bootstrap',
     logo: Bootstrap,
+    logoColor: '#7711f2',
     descreption: 'A set of pre-designed styles and components to quickly create responsive and stylish web pages.',
   },
   {
     name: 'bulma',
     logo: Bulma,
+    logoColor: '#09caad',
     descreption: 'A lightweight CSS framework with elegant components that simplifies building modern websites.',
   },
   {
     name: 'sass',
     logo: Sass,
-    descreption: 'An extension of CSS that adds variables, nesting, and other features to make styling easier and more organized.',
+    logoColor: '#cb6197',
+    descreption: 'A preprocessor of CSS that adds variables, nesting, and other features to make styling easier and more organized.',
   },
   {
     name: 'git',
     logo: Git,
+    logoColor: '#e84e32',
     descreption: 'A version control system for tracking and managing code changes, great for teamwork.',
+  },
+  {
+    name: 'figma',
+    logo: Figma,
+    logoColor: '#29befe',
+    descreption: 'A powerful design and prototyping tool that allows for real-time collaboration and streamlined UI/UX workflows.',
   },
   {
     name: 'javascript',
     logo: Javascript,
+    logoColor: '#c19e38',
     descreption: 'A programming language that makes websites interactive (e.g., buttons, pop-ups).',
   },
   {
     name: 'typescript',
     logo: Typescript,
+    logoColor: '#0076c6',
     descreption: 'A "supercharged" version of JavaScript with type-checking to simplify development and reduce errors.',
   },
   {
     name: 'react',
     logo: React,
+    logoColor: '#0bb4d2',
     descreption: 'A library for building interactive user interfaces using components.',
   },
   {
     name: 'redux',
     logo: Redux,
+    logoColor: '#7348b6',
     descreption: 'A tool for managing application state, making it easier to work with data.',  
   },
   {
     name: 'express',
     logo: Express,
+    logoColor: '#000000',
     descreption: 'A minimalist backend framework for building APIs and web applications on Node.js.',  
   },
   {
     name: 'mongodb',
     logo: Mongodb,
+    logoColor: '#559034',
     descreption: 'A database where data is stored as JSON-like objects, perfect for modern applications.',  
   },
 ];
@@ -70,6 +88,13 @@ const projects = [
     buttonTitle: 'Demo Link',
     previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
     descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    skills: [
+      'git',
+      'html',
+      'css',
+      'sass',
+      'figma',
+    ],
   },
   {
     name: '2048 Game',
@@ -77,6 +102,30 @@ const projects = [
     buttonTitle: 'Demo Link',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
     descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    skills: [
+      'git',
+      'html',
+      'css',
+      'sass',
+      'javascript',
+    ]
+  },
+  {
+    name: 'Portfolio Artem Brui',
+    link: 'https://artem-brui.github.io/Game-2048/',
+    buttonTitle: 'Demo Link',
+    previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
+    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    skills: [
+      'git',
+      'html',
+      'css',
+      'sass',
+      'figma',
+      'javascript',
+      'typescript',
+      'react',
+    ]
   },
 ];
 
@@ -173,7 +222,7 @@ export const content = {
     ]
   },
   SkillsSection: {
-    sectionName: 'Skills',
+    sectionName: 'My Skills',
     sectionHeader: 'I am striving to never stop learning and improving',
     skillsList: skills,
   },

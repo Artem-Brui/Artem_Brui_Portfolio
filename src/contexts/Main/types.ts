@@ -8,6 +8,7 @@ export type ChildrenType = {
 export type SkillType = {
   name: string;
   logo: React.FC<PropsIcons>;
+  logoColor: string;
   descreption: string;
 }
 

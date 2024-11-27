@@ -24,7 +24,6 @@ const Form = () => {
         textarea.style.height = `${textarea.scrollHeight}px`;
 
         textareaHeight.current = textarea.scrollHeight;
-        console.log();
       }
     }
     };
