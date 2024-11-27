@@ -36,7 +36,7 @@ const SkillsBoard = () => {
 
   const skillsRoundingIndex =
     (deltaX / (toglerWidth / 100)) *
-    ((360 - skillsListCopy.length * 2.5) / 100) || 0;
+    ((360 - skillsListCopy.length * 2) / 100) || 0;
   
   ///RADIUS
   useEffect(() => {
