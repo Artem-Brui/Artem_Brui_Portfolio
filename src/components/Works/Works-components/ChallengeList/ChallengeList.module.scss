@@ -1,0 +1,16 @@
+.challenges_list {
+  @include Media-M;
+
+  margin-bottom: 25px;
+  list-style-type: disc;
+  text-transform: uppercase;
+
+
+  & li:nth-of-type(1) {
+    padding-top: 5px;
+  }
+
+  & * {
+    text-transform: none;
+  }
+}

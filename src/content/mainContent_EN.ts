@@ -85,9 +85,13 @@ const projects = [
   {
     name: 'The MET Museum',
     link: 'https://artem-brui.github.io/MET-Landing-page',
-    buttonTitle: 'Demo Link',
     previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
-    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    created: 'May 2024',
+    challenges: [
+      'one hub.io/Game-2048/previ',
+      'two hub.io/Game-2048/previ',
+      'three hub.io/Game-2048/previ',
+    ],
     skills: [
       'git',
       'html',
@@ -99,9 +103,13 @@ const projects = [
   {
     name: '2048 Game',
     link: 'https://artem-brui.github.io/Game-2048/',
-    buttonTitle: 'Demo Link',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
-    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    created: 'October 2024',
+    challenges: [
+      'one hub.io/Game-2048/previ',
+      'two hub.io/Game-2048/previ',
+      'three hub.io/Game-2048/previ',
+    ],
     skills: [
       'git',
       'html',
@@ -111,11 +119,15 @@ const projects = [
     ]
   },
   {
-    name: 'Portfolio Artem Brui',
+    name: ' My Portfolio',
     link: 'https://artem-brui.github.io/Game-2048/',
-    buttonTitle: 'Demo Link',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
-    descreption: 'bla-bla-bla-bla-bla-bla-bla-bla-bla-bl bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla-bla',
+    created: 'December 2024',
+    challenges: [
+      'one hub.io/Game-2048/previ',
+      'two hub.io/Game-2048/previ',
+      'three hub.io/Game-2048/previ',
+    ],
     skills: [
       'git',
       'html',
@@ -230,6 +242,9 @@ export const content = {
     sectionName: 'Works',
     sectionHeader: 'I had the pleasure of working with these awesome projects',
     works: projects,
+    createdTitle: 'Created:',
+    challengesTitle: 'Challenges:',
+    buttonTitle: 'Demo Link',
   },
   ExperienceSection: {
     sectionName: 'Experience',

@@ -1,0 +1,15 @@
+
+.skills_item {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 3px;
+}
+
+.skill_name {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 100;
+}

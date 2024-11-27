@@ -19,10 +19,10 @@ const App = () => {
     <div className={classNames("page", theme)}>
       <Header />
       {/* <Home />
-      <About /> */}
-      <Skills />
-      {/* <Works />
-      <Experience />
+      <About />
+      <Skills /> */}
+      <Works />
+      {/* <Experience />
       <Contact />
       <Footer /> */}
     </div>

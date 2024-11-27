@@ -1,0 +1,88 @@
+
+.work__item {
+  margin-top: 20px;
+  width: 80vw;
+  max-width: 400px;
+  padding: 30px 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba($Brand-1, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+.work__item__dark {
+  background-color: rgba($Brand-1, 0.1);
+}
+
+.work__item__light {
+  background-color: rgba($Brand-1, 0.3);
+}
+
+.title {
+  @include Logo-M;
+
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 29px;
+  margin-bottom: 9px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date {
+  @include Code-M;
+
+  margin-bottom: 15px;
+}
+
+.item__image {
+  position: relative;
+}
+
+.computer {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.preview_container {
+  width: 53%;
+  height: 47%;
+  overflow: hidden;
+  position: absolute;
+  top: 21.8%;
+  right: 2.5%;
+  z-index: 1;
+}
+
+.preview {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.link {
+  @include Button-U;
+
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 2% 8%;
+  border-radius: 8px;
+  color: inherit;
+  background-color: $Brand-1;
+  
+
+  &:hover {
+    background-color: #2876b6;
+  }
+
+  &:active {
+    scale: .95;
+  }
+}
+
