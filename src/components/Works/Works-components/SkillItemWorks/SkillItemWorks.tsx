@@ -1,4 +1,4 @@
-import cl from "./SkillItem.module.scss";
+import cl from "./SkillItemWorks.module.scss";
 import React from "react";
 import { getSkillLogo, getSkillLogoColor } from "./service";
 import { FigmaHighlight } from "../../../SVGs/Icons";
@@ -7,7 +7,7 @@ type Props = {
   skill: string;
 };
 
-const SkillItem: React.FC<Props> = ({ skill }) => {
+const SkillItemWorks: React.FC<Props> = ({ skill }) => {
   const SkillLogoColor = getSkillLogoColor(skill);
   const SkillName = skill;
   const SkillLogo = skill !== "figma" ? getSkillLogo(skill) : FigmaHighlight;
@@ -34,4 +34,4 @@ const SkillItem: React.FC<Props> = ({ skill }) => {
   );
 };
 
-export default SkillItem;
+export default SkillItemWorks;

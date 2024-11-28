@@ -1,12 +1,12 @@
-import cl from "./SkillsList.module.scss";
-import SkillItem from "../SkillItem";
+import cl from "./SkillsListWorks.module.scss";
+import SkillItem from "../SkillItemWorks";
 
 type Props = {
   skills: string[];
 };
 
 
-const SkillsList: React.FC<Props> = ({ skills }) => {
+const SkillsListWorks: React.FC<Props> = ({ skills }) => {
 
   return (
     <ul className={cl.skills_list}>
@@ -22,4 +22,4 @@ const SkillsList: React.FC<Props> = ({ skills }) => {
   );
 };
 
-export default SkillsList;
+export default SkillsListWorks;

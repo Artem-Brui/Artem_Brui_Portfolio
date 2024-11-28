@@ -4,21 +4,25 @@ import computer from "../../../../images/computer.webp";
 import React from "react";
 import useTheme from "../../../../customHooks/useTheme";
 import { content } from "../../../../content/mainContent_EN";
-import SkillsList from "../SkillsList";
-import ChallengeList from "../ChallengeList";
+import SkillsList from "../SkillsListWorks";
+import ChallengeList from "../ChallengeListWorks";
 
-type Props = {
-  work: {
+export type WorkType = {
     name: string;
     link: string;
     previewImage: string;
-    created: string,
+    created: string;
     challenges: string[];
     skills: string[];
-  };
 };
 
-const WorkItem: React.FC<Props> = ({ work }) => {
+type Props = {
+  work: WorkType;
+  highlightIndex: number;
+  index: number;
+};
+
+const WorkItem: React.FC<Props> = ({ work, index,  highlightIndex }) => {
   const { name, link, previewImage, created, challenges, skills } = work;
   const { buttonTitle, createdTitle } = content.WorksSection;
 
@@ -26,16 +30,20 @@ const WorkItem: React.FC<Props> = ({ work }) => {
 
   const workItemClass =
     theme === "dark" ? cl.work__item__dark : cl.work__item__light;
-
+  
+  const isHighlighted = index == highlightIndex - 1;
+  const listItemDisplay = isHighlighted ? 'flex' : 'none';
 
   return (
-    <div className={classNames(cl.work__item, workItemClass)}>
-      <h4 className={cl.title}>
-        {name}
-      </h4>
+    <li
+      style={{
+        display: listItemDisplay,
+      }}
+      className={classNames(cl.work__item, workItemClass)}>
+      <h4 className={cl.title}>{name}</h4>
 
       <p className={cl.date}>
-        {createdTitle}{' '}{created}
+        {createdTitle} {created}
       </p>
 
       <div className={cl.item__image}>
@@ -52,7 +60,7 @@ const WorkItem: React.FC<Props> = ({ work }) => {
       <a className={cl.link} href={link} target="_blank">
         {buttonTitle}
       </a>
-    </div>
+    </li>
   );
 };
 

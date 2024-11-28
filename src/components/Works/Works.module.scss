@@ -1,4 +1,5 @@
 .works {
+  display: grid;
   position: relative;
 
   &::after {
@@ -18,12 +19,6 @@
     position: relative;
     z-index: 1;
   }
-}
-
-.works__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .dark {

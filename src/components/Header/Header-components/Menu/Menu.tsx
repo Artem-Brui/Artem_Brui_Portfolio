@@ -12,7 +12,7 @@ const Menu = () => {
     <nav className={styles.navigation}>
       <a
         className={styles.burger_menu}
-        onClick={() => {console.log(444444);
+        onClick={() => {console.log('menuClicked');
         }}
       >
         <BurgerMenu

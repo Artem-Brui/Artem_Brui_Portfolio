@@ -1,13 +1,13 @@
-import cl from "./ChallengeList.module.scss";
+import cl from "./ChallengeListWorks.module.scss";
 import React from "react";
 import { content } from "../../../../content/mainContent_EN";
-import ChallengeItem from "../ChallengeItem";
+import ChallengeItem from "../ChallengeItemWorks";
 
 type Props = {
   challenges: string[];
 };
 
-const ChallengeList: React.FC<Props> = ({ challenges }) => {
+const ChallengeListWorks: React.FC<Props> = ({ challenges }) => {
   const { challengesTitle } = content.WorksSection;
 
   return (
@@ -19,4 +19,4 @@ const ChallengeList: React.FC<Props> = ({ challenges }) => {
   );
 };
 
-export default ChallengeList;
+export default ChallengeListWorks;

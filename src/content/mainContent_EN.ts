@@ -1,4 +1,4 @@
-import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Typescript } from "../components/SVGs/Icons";
+import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript } from "../components/SVGs/Icons";
 
 const skills = [
   {
@@ -23,6 +23,12 @@ const skills = [
     name: 'bulma',
     logo: Bulma,
     logoColor: '#09caad',
+    descreption: 'A lightweight CSS framework with elegant components that simplifies building modern websites.',
+  },
+  {
+    name: 'tailwind',
+    logo: Tailwind,
+    logoColor: '#24cabb',
     descreption: 'A lightweight CSS framework with elegant components that simplifies building modern websites.',
   },
   {
