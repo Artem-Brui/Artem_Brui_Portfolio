@@ -5,12 +5,11 @@ import classNames from "classnames";
 import useTheme from "../../../../customHooks/useTheme";
 
 const Switcher = () => {
-  const { theme, toggleTheme, colorLight } = useTheme();
+  const { theme, toggleTheme, colorBrand } = useTheme();
 
   const [isDark, setIsDark] = useState(theme === "dark");
 
-  const themeClassName = isDark ? styles.dark : styles.light;
-  const iconColor = isDark ? colorLight : "#bcbc02";
+  const iconColor = !isDark ? colorBrand : "#fafa83";
   const iconClassName = isDark ? styles.icon__dark : styles.icon__light;
 
   const iconSize = 21;
@@ -21,10 +20,10 @@ const Switcher = () => {
   };
 
   return (
-    <div className={classNames(styles.switcherBox, themeClassName)}>
+    <div className={classNames(styles.switcherBox, styles[theme])}>
       <label
         htmlFor="switcher"
-        className={classNames(styles.switcher, themeClassName)}
+        className={classNames(styles.switcher, styles[theme])}
       >
         <input
           id="switcher"
@@ -42,7 +41,7 @@ const Switcher = () => {
                   [styles.hiden]: isDark,
                 })}
           >
-            <Sun width={iconSize} height={iconSize} color={iconColor} />
+            <Moon width={iconSize} height={iconSize} color={iconColor} />
           </i>
 
           <i
@@ -53,7 +52,7 @@ const Switcher = () => {
                 [styles.hiden]: !isDark,
               })}
           >
-            <Moon width={iconSize} height={iconSize} color={iconColor} />
+            <Sun width={iconSize} height={iconSize} color={iconColor} />
           </i>
         </div>
       </label>

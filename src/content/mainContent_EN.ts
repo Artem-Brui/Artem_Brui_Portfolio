@@ -214,11 +214,11 @@ export const content = {
     callToAction: "Let's Talk",
     counter: {
         projectsAmount: projects.length,
-        projectsTitle: 'Self-Driven Projects',
+        projectsTitle: 'Self Projects',
       carrierStarted: '2021',
       carrierTitle: 'Years of Experiance',
       skillsAmount: skills.length,
-      skillsTitle: 'Technical Proficiencies',
+      skillsTitle: 'Technical Skills',
     }
   },
   AboutSection: {
@@ -240,7 +240,7 @@ export const content = {
     ]
   },
   SkillsSection: {
-    sectionName: 'My Skills',
+    sectionName: 'Skills',
     sectionHeader: 'I am striving to never stop learning and improving',
     skillsList: skills,
   },

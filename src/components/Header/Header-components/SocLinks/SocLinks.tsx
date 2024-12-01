@@ -1,13 +1,13 @@
 import styles from "./SocLinks.module.scss";
-
 import {Linkedin, GitHub} from "../../../SVGs/Icons";
 import useTheme from "../../../../customHooks/useTheme";
+import getResponsiveIconSize from "./service";
 
 const SocLinks = () => {
   const { colorBrand } = useTheme();
-  
-  const iconSize = 25;
 
+  const iconSize = getResponsiveIconSize(1);
+  
   return (
     <div className={styles.socLinks}>
       <a href="https://www.linkedin.com/in/artem-brui-563252288" target="blank">

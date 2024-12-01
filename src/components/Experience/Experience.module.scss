@@ -1,14 +1,16 @@
 .experience {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   & h2 {
-    font-size: 55px;
+    font-size: 45px;
   }
 }
 
 .jobs__list {
-  @include Para-M;
-
   border-left: 2px solid $Brand-1;
+  max-width: 430px;
 
   & > li {  
     margin-left: 33px;
@@ -26,4 +28,35 @@
 
 .light {
   background-color: rgba($Brand-1, 0.15);
+}
+
+
+@include OnTablet {
+  .jobs__list {
+    // padding-inline: 50px;
+  }
+}
+
+@include OnDesktop {
+  .jobs__list {
+    max-width: 1000px;
+  }
+
+  .experience {
+    & h2 {
+      font-size: 60px;
+    }
+  }
+}
+
+@include OnLarge {
+  .jobs__list {
+    max-width: 1200px;
+  }
+
+  .experience {
+    & h2 {
+      font-size: 80px;
+    }
+  }
 }

@@ -7,7 +7,7 @@
 
   & h2 {
     width: max-content;
-  }
+  }  
 }
 
 .skills::after {
@@ -34,4 +34,20 @@
   background-color: $White;
 }
 
+
+@include OnTablet {
+  .skills  {
+    & > div:first-of-type > p {
+      margin: 0;
+    }
+  }
+}
+
+@include OnDesktop {
+  .skills  {
+    & > div:first-of-type > p {
+      margin: 0;
+    }
+  }
+}
 

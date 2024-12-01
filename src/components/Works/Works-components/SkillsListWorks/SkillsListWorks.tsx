@@ -1,5 +1,5 @@
 import cl from "./SkillsListWorks.module.scss";
-import SkillItem from "../SkillItemWorks";
+import SkillItemWorks from "../SkillItemWorks";
 
 type Props = {
   skills: string[];
@@ -12,7 +12,7 @@ const SkillsListWorks: React.FC<Props> = ({ skills }) => {
     <ul className={cl.skills_list}>
       {skills.map((skill, index) => {
         return (
-          <SkillItem
+          <SkillItemWorks
             key={index}
             skill={skill}
           />

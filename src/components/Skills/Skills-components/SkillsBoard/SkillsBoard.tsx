@@ -1,15 +1,18 @@
 import cl from "./SkillsBoard.module.scss";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { content } from "../../../../content/mainContent_EN";
 import useToogleEvents from "../../../../customHooks/useToggleEvents";
 import SkillItem from "../SkillItem";
 import classNames from "classnames";
 import useTheme from "../../../../customHooks/useTheme";
+import useWindowWidth from "../../../../customHooks/useWindowScreen";
 
 const SkillsBoard = () => {
   const skillsListCopy = [...content.SkillsSection.skillsList].reverse();
 
   const { theme, colorDark, colorLight } = useTheme();
+  const { windowWidth } = useWindowWidth();
+
 
   const isThemeDark = theme === 'dark';
   const scrollerBGColor = isThemeDark ? colorLight : colorDark;
@@ -24,7 +27,6 @@ const SkillsBoard = () => {
 
   const [isMoving, setIsMoving] = useState(false);
   const [toogleTransform, setToogleTransform] = useState(0);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useToogleEvents(isMoving, toglerInitialX, toglerWidth, setToogleTransform, setIsMoving);
 
@@ -36,22 +38,15 @@ const SkillsBoard = () => {
 
   const skillsRoundingIndex =
     (deltaX / (toglerWidth / 100)) *
-    ((360 - skillsListCopy.length * 2) / 100) || 0;
-  
-  ///RADIUS
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
+    ((360 - skillsListCopy.length * 1.75) / 100) || 0;
 
-    window.addEventListener('resize', handleResize);
 
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  //RADIUS
+  let circleRadius = 130;
 
-  const circleRadius = Math.min(windowWidth * 0.38, 150);
+  if (windowWidth > 1279) {
+    circleRadius = 200;
+  }
 
   //TITLE
   const anglePerSkill = 360 / skillsListCopy.length;
@@ -59,7 +54,7 @@ const SkillsBoard = () => {
   const highlightIndex = skillsListCopy.length - 1 - Math.floor(skillsRoundingIndex / anglePerSkill);
   const shownTitle = skillsListCopy[highlightIndex].name;
   const shownDescription = skillsListCopy[highlightIndex].descreption;
-
+  
   return (
     <div className={cl.skills_board}>
       <ul

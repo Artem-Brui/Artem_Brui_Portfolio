@@ -1,5 +1,9 @@
+
 .works {
-  display: grid;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 
   &::after {
@@ -34,5 +38,23 @@
 
   &::after {
     opacity: 0.12;
+  }
+}
+
+@include OnTablet {
+  .works {
+    min-height: 1200px;
+  }
+}
+
+@include OnDesktop {
+  .works {
+    min-height: 1250px;
+  }
+}
+
+@include OnLarge {
+  .works {
+    min-height: 1250px;
   }
 }

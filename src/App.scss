@@ -1,8 +1,7 @@
 
 .page {
-
   & > * > * {
-    margin-inline: 24px;
+    margin-inline: $margin-inline-mobile;
   }
 }
 
@@ -16,4 +15,43 @@
 
 .tags {
   color: $Brand-1;
+}
+
+@include OnMobile {
+  .page {
+    @include MobileFont;
+
+    & > * > * {
+      margin-inline: $margin-inline-mobile;
+    }
+  }
+}
+
+@include OnTablet {
+  .page {
+    @include TabletFont;
+    
+    & > * > * {
+      margin-inline: $margin-inline-tablet;
+    }
+  }
+}
+
+@include OnDesktop {
+  .page {
+    @include DesktopFont;
+
+    & > * > * {
+      margin-inline: $margin-inline-desktop;
+    }
+  }
+}
+@include OnLarge {
+  .page {
+    @include LargeFont;
+
+    & > * > * {
+      margin-inline: $margin-inline-large;
+    }
+  }
 }

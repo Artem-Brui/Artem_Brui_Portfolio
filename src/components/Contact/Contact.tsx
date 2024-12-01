@@ -14,8 +14,10 @@ const Contact = () => {
 
   return (
     <section className={classNames(styles.contact, sectionClass)}>
-      <SectionHead title={title} text={textHead} />
-      <Form />
+      <div className={styles.contact_container}>
+        <SectionHead title={title} text={textHead} />
+        <Form />
+      </div>
 
     </section>
   )

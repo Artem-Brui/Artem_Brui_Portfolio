@@ -2,3 +2,21 @@
   display: flex;
   gap: 14px;
 }
+
+@include OnTablet {
+  .socLinks {
+    gap: 20px;
+  }
+}
+
+@include OnDesktop {
+  .socLinks {
+    gap: 24px;
+  }
+}
+
+@include OnLarge {
+  .socLinks {
+    gap: 30px;
+  }
+}

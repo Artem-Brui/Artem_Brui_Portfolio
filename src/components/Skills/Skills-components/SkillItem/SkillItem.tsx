@@ -4,6 +4,7 @@ import { SkillType } from "../../../../contexts/Main/types";
 import useTheme from "../../../../customHooks/useTheme";
 import { FigmaHighlight, PropsIcons } from "../../../SVGs/Icons";
 import cl from "./SkillItem.module.scss";
+import useWindowWidth from "../../../../customHooks/useWindowScreen";
 
 type Props = {
   skill: SkillType;
@@ -18,11 +19,19 @@ const anglePerSkill = 360 / skillsAmount;
 
 const SkillItem: React.FC<Props> = ({ skill, index, moveIndex, circleRadius, highlightIndex }) => {
   const { theme, colorBrand } = useTheme();
+  const { windowWidth } = useWindowWidth();
+
   const isThemeDark = theme === 'dark';
 
   const isHighlighted = highlightIndex === index;
 
-  const iconSize = isHighlighted ? 100 : 30;
+  let iconSize = 0; 
+  if (windowWidth > 1279) {
+    iconSize = isHighlighted ? 120 : 50;
+  } else {
+    iconSize = isHighlighted ? 80 : 40;
+  }
+
   const iconColor = isHighlighted ? skill.logoColor : colorBrand;
   const movementAngle = isHighlighted
     ? Math.floor(moveIndex / anglePerSkill) * anglePerSkill
@@ -43,10 +52,11 @@ const SkillItem: React.FC<Props> = ({ skill, index, moveIndex, circleRadius, hig
         [cl.light]: isHighlighted && !isThemeDark,
       })}
       style={{
-          width: iconSize,
-          height: iconSize,
+        width: iconSize,
+        height: iconSize,
           transform: `rotate(${rotateAngle}deg) translate(0, -${circleRadius}px) rotate(-${rotateAngle}deg)`
-        }}>
+        }}
+    >
         {IconComponent ? (
           <IconComponent width={iconSize} height={iconSize} color={iconColor} />
         ) : (

@@ -14,7 +14,7 @@ const PreviewList: React.FC<Props> = ({ highlightIndex }) => {
     <ul className={cl.preview_list}>
       {worksList.map((_item, index) => {
         const isHighlighted = index === highlightIndex - 1;
-        const itemSize = isHighlighted ? 25 : 10;
+        const itemSize = isHighlighted ? 17 : 7;
 
         return (
           <div

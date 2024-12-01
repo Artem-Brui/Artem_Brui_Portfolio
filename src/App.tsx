@@ -15,7 +15,7 @@ import Footer from "./components/Footer/Footer.tsx";
 const App = () => {
   const { theme } = useTheme();
 
-  return (
+  return (  
     <div className={classNames("page", theme)}>
       <Header />
       <Home />

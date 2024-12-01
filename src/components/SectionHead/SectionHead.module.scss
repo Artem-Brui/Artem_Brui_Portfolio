@@ -1,12 +1,14 @@
 .container {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  @include H1-U;
-  
   justify-self: center;
-  font-weight: 200;
+  font-size: calc($mobile-font-size + 32px);
+  line-height: calc($mobile-line-height + 32px);
+  font-weight: 500;
   color: $Brand-1;
   width: min-content;
   padding-bottom: 20px;
@@ -15,7 +17,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 13px;
     height: 13px;
@@ -27,7 +29,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 13px;
     height: 13px;
@@ -40,8 +42,45 @@
 }
 
 .text {
-  @include Para-M;
-
+  max-width: 500px;
   text-align: center;
   margin-bottom: 50px;
+  font-size: calc($mobile-font-size + 5px);
+  line-height: calc($mobile-line-height + 5px);
+}
+
+@include OnTablet {
+  .title {
+    font-size: calc($tablet-font-size + 35px);
+    line-height: calc($tablet-line-height + 35px);
+  }
+
+  .text {
+    font-size: calc($tablet-font-size + 5px);
+    line-height: calc($tablet-line-height + 5px);
+  }
+}
+
+@include OnDesktop {
+  .title {
+    font-size: calc($desktop-font-size + 35px);
+    line-height: calc($desktop-line-height + 35px);
+  }
+
+  .text {
+    font-size: calc($desktop-font-size + 5px);
+    line-height: calc($desktop-line-height + 5px);
+  }
+}
+@include OnLarge {
+  .title {
+    font-size: calc($large-font-size + 39px);
+    line-height: calc($large-line-height + 35px);
+  }
+
+  .text {
+    max-width: 600px;
+    font-size: calc($large-font-size + 5px);
+    line-height: calc($large-line-height + 5px);
+  }
 }

@@ -1,12 +1,14 @@
 import useTheme from "../../../../customHooks/useTheme";
 import { BurgerMenu } from "../../../SVGs/Icons";
+import getResponsiveIconSize from "../SocLinks/service";
 import styles from "./Menu.module.scss";
 
 const Menu = () => {
   const { theme, colorLight, colorDark } = useTheme();
   
   const iconColor = theme === 'dark' ? colorLight : colorDark;
-  const iconSize = 40;
+  
+  const iconSize = getResponsiveIconSize(1.8);
 
   return (
     <nav className={styles.navigation}>

@@ -3,10 +3,10 @@
   top: 320px;
   outline: none;
   border: none;
-  width: 45px;
-  height: 70px;
-  background-color: $Brand-1;
-  border-radius: 10px;
+  width: 35px;
+  height: 90px;
+  background-color: rgba($Brand-1, 0.2);
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 }
 
 .button_left {
-  left: 0;
+  left: -22px;
   scale: (-1);
 
   &:active {
@@ -26,9 +26,27 @@
 }
 
 .button_right {
-  right: 0;
+  right: -22px;
 
   &:active {
     scale: 0.95;
   }
+}
+
+@include OnTablet {
+  .button_left {
+    left: -52px;
+  }
+  
+  .button_right {
+    right: -52px;
+  }
+}
+
+@include OnDesktop {
+
+}
+
+@include OnLarge {
+
 }

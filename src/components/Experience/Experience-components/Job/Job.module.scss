@@ -1,5 +1,5 @@
 .jobs__item {
-  // list-style-type: disc;
+  max-width: 900px;
   padding-bottom: 20px;
   padding-left: 10px;
 
@@ -10,15 +10,15 @@
 }
 
 .role {
-  font-size: 25px;
+  font-size: calc($mobile-font-size + 5px);
+  line-height: calc($mobile-line-height + 5px);
   font-weight: 600;
-  line-height: 25px;
   color: $Brand-1;
   text-transform: uppercase;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 25px;
     height: 25px;
@@ -30,9 +30,10 @@
 }
 
 .company {
-  font-size: 20px;
+  font-size: calc($mobile-font-size + 3px);
+  line-height: calc($mobile-line-height);
   font-weight: 600;
-  line-height: 25px;
+  text-transform: uppercase;
 }
 
 .jobType {
@@ -40,13 +41,13 @@
 }
 
 .period {
-  font-size: 14px;
+  font-size: calc($mobile-font-size - 3px);
   font-weight: 500;
 }
 
 .location {
   font-style: italic;
-  font-size: 17px;
+  font-size: calc($mobile-font-size - 1px);
   font-weight: 200;
 }
 
@@ -54,6 +55,7 @@
 .achievements {
   list-style-type: disc;
   margin-top: 20px;
+  line-height: calc($mobile-line-height + 2px);
 
   & > span {
     text-transform: uppercase;
@@ -64,4 +66,88 @@
 .challenge,
 .achievement {
   margin-left: 30px;
+
+  &:first-of-type {
+    margin-top: 5px;
+  }
+}
+
+@include OnTablet {
+  .role {
+    font-size: calc($tablet-font-size + 5px);
+    line-height: calc($tablet-line-height + 5px);
+  }
+  .company {
+    font-size: calc($tablet-font-size + 3px);
+    line-height: calc($tablet-line-height);
+  }
+
+  .period {
+    font-size: calc($tablet-font-size - 3px);
+  }
+
+  .location {
+    font-size: calc($tablet-font-size);
+  }
+
+  .challenges,
+  .achievements {
+    line-height: calc($tablet-line-height + 2px);
+  }
+}
+
+@include OnDesktop {
+  .jobs__item {
+    max-width: 650px;
+  }
+
+  .role {
+    font-size: calc($desktop-font-size + 5px);
+    line-height: calc($desktop-line-height + 5px);
+  }
+  .company {
+    font-size: calc($desktop-font-size + 3px);
+    line-height: calc($desktop-line-height);
+  }
+
+  .period {
+    font-size: calc($desktop-font-size - 3px);
+  }
+
+  .location {
+    font-size: calc($desktop-font-size);
+  }
+
+  .challenges,
+  .achievements {
+    line-height: calc($desktop-line-height + 2px);
+  }
+}
+
+@include OnLarge {
+  .jobs__item {
+    max-width: 850px;
+  }
+
+  .role {
+    font-size: calc($large-font-size + 5px);
+    line-height: calc($large-line-height + 5px);
+  }
+  .company {
+    font-size: calc($large-font-size + 3px);
+    line-height: calc($large-line-height);
+  }
+
+  .period {
+    font-size: calc($large-font-size - 3px);
+  }
+
+  .location {
+    font-size: calc($large-font-size);
+  }
+
+  .challenges,
+  .achievements {
+    line-height: calc($large-line-height + 2px);
+  }
 }

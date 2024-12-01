@@ -1,4 +1,5 @@
 import { content } from "../../../../content/mainContent_EN";
+import FormLink from "../FormLink";
 import Tag from "../Tag";
 import styles from "./Descreption.module.scss";
 
@@ -11,6 +12,7 @@ const Descreption = () => {
         <p className={styles.descreption_text}>{text}</p>
 
         <Tag content={"<p>"} />
+        <FormLink />
       </div>
     </>
   );

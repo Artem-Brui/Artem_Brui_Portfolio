@@ -14,6 +14,8 @@ const useToogleEvents = (...argumentsList: Arguments) => {
   useEffect(() => {
     const handleGlobalMove = (event: MouseEvent | TouchEvent) => {
       if (isMoving) {
+        event.preventDefault();
+
         let newTransform = 0;
 
         if (event instanceof MouseEvent) {
@@ -46,7 +48,7 @@ const useToogleEvents = (...argumentsList: Arguments) => {
     return () => {
       window.removeEventListener("mousemove", handleGlobalMove);
       window.removeEventListener("mouseup", handleGlobalEnd);
-      window.addEventListener("touchmove", handleGlobalMove);
+      window.addEventListener("touchmove", handleGlobalMove,  { passive: false });
       window.addEventListener("touchend", handleGlobalEnd);
     };
   }, [isMoving, toglerInitialX, toglerWidth, setToogleTransform, setIsMoving]);

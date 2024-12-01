@@ -1,8 +1,22 @@
 .title {
-  @include Media-M;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+}
 
-  & span {
-    color: $Brand-1;
-    margin-right: 5px;
+@include OnTablet {
+  .title {
+    font-size: 22px;
+    line-height: 25px;
   }
+}
+
+@include OnDesktop {
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+@include OnLarge {
+
 }
