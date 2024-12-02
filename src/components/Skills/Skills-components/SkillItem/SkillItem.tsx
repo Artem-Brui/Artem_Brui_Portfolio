@@ -1,10 +1,10 @@
 import classNames from "classnames";
-import { content } from "../../../../content/mainContent_EN";
-import { SkillType } from "../../../../contexts/Main/types";
-import useTheme from "../../../../customHooks/useTheme";
-import { FigmaHighlight, PropsIcons } from "../../../SVGs/Icons";
 import cl from "./SkillItem.module.scss";
-import useWindowWidth from "../../../../customHooks/useWindowScreen";
+import { SkillType } from "@contexts/Main/types";
+import useTheme from "@customHooks/useTheme";
+import useWindowWidth from "@customHooks/useWindowScreen";
+import useLanguage from "@customHooks/useLanguage";
+import { FigmaHighlight, PropsIcons } from "@components/SVGs/Icons";
 
 type Props = {
   skill: SkillType;
@@ -14,13 +14,14 @@ type Props = {
   highlightIndex: number;
 };
 
-const skillsAmount = content.SkillsSection.skillsList.length;
-const anglePerSkill = 360 / skillsAmount;
 
 const SkillItem: React.FC<Props> = ({ skill, index, moveIndex, circleRadius, highlightIndex }) => {
   const { theme, colorBrand } = useTheme();
   const { windowWidth } = useWindowWidth();
-
+  const { content } = useLanguage();
+  
+  const skillsAmount = content.SkillsSection.skillsList.length;
+  const anglePerSkill = 360 / skillsAmount;
   const isThemeDark = theme === 'dark';
 
   const isHighlighted = highlightIndex === index;

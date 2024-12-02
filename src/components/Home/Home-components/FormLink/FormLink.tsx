@@ -1,4 +1,4 @@
-import { content } from "../../../../content/mainContent_EN";
+import useLanguage from "@customHooks/useLanguage";
 import useTheme from "../../../../customHooks/useTheme";
 import getResponsiveIconSize from "../../../Header/Header-components/SocLinks/service";
 import { Mail } from "../../../SVGs/Icons";
@@ -6,6 +6,7 @@ import styles from "./FormLink.module.scss";
 
 const FormLink = () => {
   const { theme, colorBrand, colorDark, colorLight } = useTheme();
+  const { content } = useLanguage();
 
   const callToAction = content.HomeSection.callToAction;
   const textColor = theme === "dark" ? colorLight : colorDark;

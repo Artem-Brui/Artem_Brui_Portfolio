@@ -43,6 +43,12 @@
 
 .light {
   background-color: $White;
+
+  & .footer_container {
+    &::before {
+      filter: opacity(20%);
+    }
+  }
 }
 
 //===============

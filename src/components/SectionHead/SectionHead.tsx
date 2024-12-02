@@ -1,4 +1,4 @@
-import styles from "./SectionHead.module.scss";
+import cl from "./SectionHead.module.scss";
 
 type Props = {
   title: string;
@@ -7,9 +7,9 @@ type Props = {
 
 const SectionHead: React.FC<Props> = ({ title, text}) => {
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>{ title }</h2>
-      <p className={styles.text}>{ text }</p>
+    <div className={cl.container}>
+      <h2 className={cl.title}>{ title }</h2>
+      <p className={cl.text}>{ text }</p>
     </div>
   );
 };

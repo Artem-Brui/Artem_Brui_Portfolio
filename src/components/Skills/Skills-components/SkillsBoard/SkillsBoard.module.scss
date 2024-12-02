@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .list {
@@ -21,7 +21,7 @@
 }
 
 .item_title {
-  width: 75%;
+  width: 65%;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
@@ -104,7 +104,7 @@
   }
 
   .item_title {
-    width: 55%;
+    width: 45%;
     font-size: calc($desktop-font-size + 8px);
   }
 

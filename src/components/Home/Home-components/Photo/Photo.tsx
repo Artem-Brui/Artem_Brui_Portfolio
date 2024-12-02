@@ -1,11 +1,11 @@
-import photo from "../../../../images/photo.webp";
-import styles from "./Photo.module.scss";
+import photo from "@images/photo.webp";
+import cl from "./Photo.module.scss";
 
 const Photo = () => {
   return (
-    <div className={styles.container}>
+    <div className={cl.container}>
       <img
-        className={styles.myPhoto}
+        className={cl.myPhoto}
         src={photo}
         alt="My photo"
       />

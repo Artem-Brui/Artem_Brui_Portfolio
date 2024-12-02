@@ -1,11 +1,13 @@
 import classNames from "classnames";
-import { content } from "../../../../content/mainContent_EN";
-import useTheme from "../../../../customHooks/useTheme";
-import Tag from "../../../Home/Home-components/Tag";
 import cl from "./AboutText.module.scss";
+import useLanguage from "@customHooks/useLanguage";
+import useTheme from "@customHooks/useTheme";
+import Tag from "@components/Home/Home-components/Tag";
 
 const AboutText = () => {
-  const { theme } = useTheme()
+  const { theme } = useTheme();
+  const { content } = useLanguage();
+
   const greating = content.AboutSection.greating;
   const paragraphsList = content.AboutSection.paragraphsList;
 

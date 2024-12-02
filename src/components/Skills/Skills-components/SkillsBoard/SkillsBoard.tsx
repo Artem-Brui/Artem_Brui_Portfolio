@@ -1,17 +1,18 @@
 import cl from "./SkillsBoard.module.scss";
 import { useRef, useState } from "react";
-import { content } from "../../../../content/mainContent_EN";
-import useToogleEvents from "../../../../customHooks/useToggleEvents";
 import SkillItem from "../SkillItem";
 import classNames from "classnames";
-import useTheme from "../../../../customHooks/useTheme";
-import useWindowWidth from "../../../../customHooks/useWindowScreen";
+import useTheme from "@customHooks/useTheme";
+import useWindowWidth from "@customHooks/useWindowScreen";
+import useLanguage from "@customHooks/useLanguage";
+import useToogleEvents from "@customHooks/useToggleEvents";
 
 const SkillsBoard = () => {
-  const skillsListCopy = [...content.SkillsSection.skillsList].reverse();
-
   const { theme, colorDark, colorLight } = useTheme();
   const { windowWidth } = useWindowWidth();
+  const { content } = useLanguage();
+
+  const skillsListCopy = [...content.SkillsSection.skillsList].reverse();
 
   const isThemeDark = theme === 'dark';
   const scrollerBGColor = isThemeDark ? colorLight : colorDark;

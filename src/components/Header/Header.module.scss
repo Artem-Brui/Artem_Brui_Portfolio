@@ -31,11 +31,19 @@
 .dark {
   background-color: $BG-1;
   border-color: $BG-1;
+
+  
 }
 
 .light {
   background-color: $White;
   border-color: $White;
+
+  & .header_container {
+    &::after {
+      filter: opacity(20%);
+    }
+  }
 }
 
 @include OnTablet {

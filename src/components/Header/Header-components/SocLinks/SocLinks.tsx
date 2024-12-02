@@ -1,7 +1,7 @@
-import styles from "./SocLinks.module.scss";
-import {Linkedin, GitHub} from "../../../SVGs/Icons";
-import useTheme from "../../../../customHooks/useTheme";
+import { GitHub, Linkedin } from "@components/SVGs/Icons";
+import cl from "./SocLinks.module.scss";
 import getResponsiveIconSize from "./service";
+import useTheme from "@customHooks/useTheme";
 
 const SocLinks = () => {
   const { colorBrand } = useTheme();
@@ -9,7 +9,7 @@ const SocLinks = () => {
   const iconSize = getResponsiveIconSize(1);
   
   return (
-    <div className={styles.socLinks}>
+    <div className={cl.socLinks}>
       <a href="https://www.linkedin.com/in/artem-brui-563252288" target="blank">
         <Linkedin
           width={iconSize}

@@ -1,19 +1,19 @@
-import styles from "./Skills.module.scss";
+import cl from "./Skills.module.scss";
 import SectionHead from "../SectionHead";
-import { content } from "../../content/mainContent_EN";
-import useTheme from "../../customHooks/useTheme";
 import classNames from "classnames";
 import SkillsBoard from "./Skills-components/SkillsBoard";
+import useTheme from "@customHooks/useTheme";
+import useLanguage from "@customHooks/useLanguage";
 
 const Skills = () => {
   const { theme } = useTheme();
-  const sectionClass = theme === "dark" ? styles.dark : styles.light;
+  const { content } = useLanguage();
 
   const title = content.SkillsSection.sectionName;
   const textHead = content.SkillsSection.sectionHeader;
 
   return (
-    <section className={classNames(styles.skills, sectionClass)}>
+    <section className={classNames(cl.skills, cl[theme])}>
       <SectionHead title={title} text={textHead} />
       <SkillsBoard />
     </section>

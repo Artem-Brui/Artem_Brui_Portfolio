@@ -1,16 +1,16 @@
 import classNames from "classnames";
 
 import "./App.scss";
-import useTheme from "./customHooks/useTheme.ts";
 
-import Header from "./components/Header";
-import Home from "./components/Home";
-import About from "./components/About/About.tsx";
-import Skills from "./components/Skills/Skills.tsx";
-import Works from "./components/Works/Works.tsx";
-import Experience from "./components/Experience/Experience.tsx";
-import Contact from "./components/Contact/Contact.tsx";
-import Footer from "./components/Footer/Footer.tsx";
+import Header from "@components/Header";
+import Home from "@components/Home";
+import About from "@components/About/About.tsx";
+import Skills from "@components/Skills/Skills.tsx";
+import Works from "@components/Works/Works.tsx";
+import Experience from "@components/Experience/Experience.tsx";
+import Contact from "@components/Contact/Contact.tsx";
+import Footer from "@components/Footer/Footer.tsx";
+import useTheme from "@customHooks/useTheme";
 
 const App = () => {
   const { theme } = useTheme();

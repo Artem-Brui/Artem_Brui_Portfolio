@@ -1,6 +1,7 @@
 import { createContext } from "react";
-import { contextThemeType } from "./types.ts";
+import { mainContextType } from "./types";
 
-const Context = createContext<contextThemeType | null>(null);
+
+const Context = createContext<mainContextType | null>(null);
 
 export default Context;

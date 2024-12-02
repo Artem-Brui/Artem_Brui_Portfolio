@@ -1,10 +1,11 @@
 import classNames from "classnames";
-import { content } from "../../../../content/mainContent_EN";
-import useTheme from "../../../../customHooks/useTheme";
 import cl from "./AboutTitle.module.scss";
+import useLanguage from "@customHooks/useLanguage";
+import useTheme from "@customHooks/useTheme";
 
 const AboutTitle = () => {
   const { theme } = useTheme();
+  const { content } = useLanguage();
 
   const sectionName = content.AboutSection.sectionName;
   return (

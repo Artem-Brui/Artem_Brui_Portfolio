@@ -1,14 +1,21 @@
 import classNames from "classnames";
 import cl from "./Form.module.scss";
-import { content } from "../../../../content/mainContent_EN";
-import useTheme from "../../../../customHooks/useTheme";
-import { useRef } from "react";
+import React, { useRef, useState } from "react";
+import useTheme from "@customHooks/useTheme";
+import useLanguage from "@customHooks/useLanguage";
 
 const Form = () => {
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const { theme } = useTheme();
+  const { content } = useLanguage();
 
-  const formData = content.ContactSection.form;
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const formDataContent = content.ContactSection.form;
 
   let textareaHeight = 16;
 
@@ -19,9 +26,27 @@ const Form = () => {
     textareaHeight = 20;
   }
 
-  const handleChangeMessage: React.ChangeEventHandler<
-    HTMLTextAreaElement
-  > = () => {
+  const handleChangeEmail: React.ChangeEventHandler<HTMLInputElement> = (
+    event
+  ) => {
+    setFormData({
+      ...formData,
+      email: event.target.value,
+    });
+  };
+
+  const handleChangeName: React.ChangeEventHandler<HTMLInputElement> = (
+    event
+  ) => {
+    setFormData({
+      ...formData,
+      name: event.target.value,
+    });
+  };
+
+  const handleChangeMessage: React.ChangeEventHandler<HTMLTextAreaElement> = (
+    event
+  ) => {
     const textarea = textareaRef.current;
 
     if (textarea) {
@@ -32,47 +57,84 @@ const Form = () => {
         textarea.style.height = `${textarea.scrollHeight}px`;
       }
     }
+    setFormData({
+      ...formData,
+      message: event.target.value,
+    });
   };
 
-  const handleSubmitForm: React.FormEventHandler<HTMLInputElement> = (
+  const handleSubmitForm: React.FormEventHandler<HTMLFormElement> = async (
     event
   ) => {
     event.preventDefault();
+
+    const stringToSend = `name=${formData.name}&email=${formData.email}&message=${formData.message}`;
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+
+    const textarea = textareaRef.current;
+
+    if (textarea) {
+        textarea.style.height = `${textareaHeight + 5}px`;
+        textarea.style.lineHeight = `${textareaHeight + 8}px`;
+    }
+
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzsvdPoYuS42g20a4j6CeyNobJGCRPlRZSBFjIL9EnbqsrgVHrv7DCrJu1NAGwDRsI/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: stringToSend,
+      }
+    );
   };
 
   return (
-    <form action="" className={classNames(cl.form, cl[theme])}>
-      <h3 className={cl.form__header}>
-        {content.ContactSection.formHeader}
-      </h3>
+    <form
+      onSubmit={handleSubmitForm}
+      className={classNames(cl.form, cl[theme])}
+    >
+      <h3 className={cl.form__header}>{content.ContactSection.formHeader}</h3>
 
       <label className={classNames(cl.fields_labels, cl.label_name)}>
-        {formData.formLabels.name}
+        {formDataContent.formLabels.name}
         <input
           className={cl.name}
           type="name"
-          placeholder={formData.formPlaceholders.name}
+          value={formData.name}
+          placeholder={formDataContent.formPlaceholders.name}
+          onChange={handleChangeName}
           required
         />
       </label>
 
       <label className={classNames(cl.fields_labels, cl.label_email)}>
-        {formData.formLabels.email}
+        {formDataContent.formLabels.email}
         <input
           className={cl.email}
           type="email"
-          placeholder={formData.formPlaceholders.email}
+          placeholder={formDataContent.formPlaceholders.email}
+          value={formData.email}
+          onChange={handleChangeEmail}
           required
         />
       </label>
 
       <label className={classNames(cl.fields_labels, cl.label_message)}>
-        {formData.formLabels.message}
+        {formDataContent.formLabels.message}
         <textarea
           className={cl.message}
-          placeholder={formData.formPlaceholders.message}
+          placeholder={formDataContent.formPlaceholders.message}
           required
           ref={textareaRef}
+          value={formData.message}
           onChange={handleChangeMessage}
         />
       </label>
@@ -81,8 +143,7 @@ const Form = () => {
         <input
           className={cl.input_button}
           type="submit"
-          value={formData.formLabels.button}
-          onSubmit={handleSubmitForm}
+          value={formDataContent.formLabels.button}
         />
       </label>
     </form>

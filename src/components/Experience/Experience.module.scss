@@ -10,7 +10,7 @@
 
 .jobs__list {
   border-left: 2px solid $Brand-1;
-  max-width: 430px;
+  max-width: 600px;
 
   & > li {  
     margin-left: 33px;
@@ -32,9 +32,6 @@
 
 
 @include OnTablet {
-  .jobs__list {
-    // padding-inline: 50px;
-  }
 }
 
 @include OnDesktop {

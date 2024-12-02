@@ -1,6 +1,6 @@
-import styles from "./Job.module.scss";
+import useLanguage from "@customHooks/useLanguage";
+import cl from "./Job.module.scss";
 import { dateCutter, periodCounter } from "./services";
-import { content } from "../../../../content/mainContent_EN";
 
 type Props = {
   jobIndex: number;
@@ -17,7 +17,8 @@ type Props = {
 };
 
 const Job: React.FC<Props> = ({ job, jobIndex }) => {
-  
+  const { content } = useLanguage();
+
   const {
     company,
     location,
@@ -30,41 +31,42 @@ const Job: React.FC<Props> = ({ job, jobIndex }) => {
   } = job;
 
   const titles = { ...content.ExperienceSection.titles };
+  const present = content.ExperienceSection.present;
   
-  const jobPeriod = `${dateCutter(jobIndex, startDate)} - ${endDate.length ? dateCutter(jobIndex, endDate) : 'present'}`
+  const jobPeriod = `${dateCutter(jobIndex, startDate)} - ${endDate.length ? dateCutter(jobIndex, endDate) : present}`
 
   return (
-    <li key={company} className={styles.jobs__item}>
-      <p className={styles.role}>{role}</p>
+    <li key={company} className={cl.jobs__item}>
+      <p className={cl.role}>{role}</p>
 
-      <p className={styles.company}>{company}</p>
+      <p className={cl.company}>{company}</p>
 
-      <p className={styles.jobType}>{jobType}</p>
+      <p className={cl.jobType}>{jobType}</p>
 
-      <p className={styles.period}>
+      <p className={cl.period}>
         {jobPeriod}
         <br/>
         {periodCounter(jobIndex, startDate, endDate)}
       </p>
 
-      <p className={styles.location}>{location}</p>
+      <p className={cl.location}>{location}</p>
 
-      <ul className={styles.achievements}>
+      <ul className={cl.achievements}>
         <span>{titles.achievements}</span>:
         {achievements.map((achievement, i) => {
           return (
-            <li key={i} className={styles.achievement}>
+            <li key={i} className={cl.achievement}>
               {achievement}
             </li>
           )
         })}
       </ul>
 
-      <ul className={styles.challenges}>
+      <ul className={cl.challenges}>
       <span>{titles.challenges}</span>:
         {challenges.map((challenge, i) => {
           return (
-            <li key={i} className={styles.challenge}>
+            <li key={i} className={cl.challenge}>
               {challenge}
             </li>
           )

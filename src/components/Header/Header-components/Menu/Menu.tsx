@@ -1,7 +1,7 @@
-import useTheme from "../../../../customHooks/useTheme";
-import { BurgerMenu } from "../../../SVGs/Icons";
+import useTheme from "@customHooks/useTheme";
 import getResponsiveIconSize from "../SocLinks/service";
-import styles from "./Menu.module.scss";
+import cl from "./Menu.module.scss";
+import { BurgerMenu } from "@components/SVGs/Icons";
 
 const Menu = () => {
   const { theme, colorLight, colorDark } = useTheme();
@@ -11,9 +11,9 @@ const Menu = () => {
   const iconSize = getResponsiveIconSize(1.8);
 
   return (
-    <nav className={styles.navigation}>
+    <nav className={cl.navigation}>
       <a
-        className={styles.burger_menu}
+        className={cl.burger_menu}
         onClick={() => {console.log('menuClicked');
         }}
       >

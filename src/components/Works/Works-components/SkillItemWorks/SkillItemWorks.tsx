@@ -1,7 +1,7 @@
 import cl from "./SkillItemWorks.module.scss";
 import React from "react";
 import { getSkillLogo, getSkillLogoColor } from "./service";
-import { FigmaHighlight } from "../../../SVGs/Icons";
+import { FigmaHighlight } from "@components/SVGs/Icons";
 
 type Props = {
   skill: string;

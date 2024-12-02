@@ -1,18 +1,20 @@
-import { content } from "../../../../content/mainContent_EN";
+import useLanguage from "@customHooks/useLanguage";
 import Tag from "../Tag";
-import styles from "./Greating.module.scss";
+import cl from "./Greating.module.scss";
 
 const Greating = () => {
+  const { content } = useLanguage();
+  
   const contentList = [...content.HomeSection.greating];
 
   return (
-    <div className={styles.greating}>
+    <div className={cl.greating}>
       <Tag content={"<h1>"} />
 
-      <div className={styles.text__container}>
+      <div className={cl.text__container}>
         {contentList.map((text, index) => {
           return (
-            <p key={index} className={styles.greating_text}>
+            <p key={index} className={cl.greating_text}>
               {text}
               <br />
             </p>

@@ -1,5 +1,5 @@
+import useLanguage from "@customHooks/useLanguage";
 import cl from "./PreviewList.module.scss";
-import { content } from "../../../../content/mainContent_EN";
 import React from "react";
 
 
@@ -8,6 +8,8 @@ type Props = {
 }
 
 const PreviewList: React.FC<Props> = ({ highlightIndex }) => {
+  const { content } = useLanguage();
+
   const worksList = [...content.WorksSection.works];
 
   return (

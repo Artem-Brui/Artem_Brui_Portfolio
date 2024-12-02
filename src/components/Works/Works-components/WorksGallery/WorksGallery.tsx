@@ -1,12 +1,13 @@
 import WorksList from "../WorksList";
 import cl from "./WorksGallery.module.scss";
-import { content } from "../../../../content/mainContent_EN";
 import { useState } from "react";
 import ArrowButton from "../ArrowButton";
 import PreviewList from "../PreviewList";
+import useLanguage from "@customHooks/useLanguage";
 
 const WorksGallery = () => {
   const [highlightIndex, setHighlightIndex] = useState(1);
+  const { content } = useLanguage();
 
   const worksList = [...content.WorksSection.works].reverse();
 

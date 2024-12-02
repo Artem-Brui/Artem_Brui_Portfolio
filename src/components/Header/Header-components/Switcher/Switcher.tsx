@@ -1,8 +1,8 @@
 import { useState } from "react";
-import styles from "./Switcher.module.scss";
-import { Sun, Moon } from "../../../SVGs/Icons";
+import cl from "./Switcher.module.scss";
 import classNames from "classnames";
-import useTheme from "../../../../customHooks/useTheme";
+import useTheme from "@customHooks/useTheme";
+import { Moon, Sun } from "@components/SVGs/Icons";
 
 const Switcher = () => {
   const { theme, toggleTheme, colorBrand } = useTheme();
@@ -10,7 +10,7 @@ const Switcher = () => {
   const [isDark, setIsDark] = useState(theme === "dark");
 
   const iconColor = !isDark ? colorBrand : "#fafa83";
-  const iconClassName = isDark ? styles.icon__dark : styles.icon__light;
+  const iconClassName = isDark ? cl.icon__dark : cl.icon__light;
 
   const iconSize = 21;
 
@@ -20,10 +20,10 @@ const Switcher = () => {
   };
 
   return (
-    <div className={classNames(styles.switcherBox, styles[theme])}>
+    <div className={classNames(cl.switcherBox, cl[theme])}>
       <label
         htmlFor="switcher"
-        className={classNames(styles.switcher, styles[theme])}
+        className={classNames(cl.switcher, cl[theme])}
       >
         <input
           id="switcher"
@@ -35,10 +35,10 @@ const Switcher = () => {
           <i
             className={
               classNames(
-                styles.icon,
+                cl.icon,
                 iconClassName,
                 {
-                  [styles.hiden]: isDark,
+                  [cl.hiden]: isDark,
                 })}
           >
             <Moon width={iconSize} height={iconSize} color={iconColor} />
@@ -46,10 +46,10 @@ const Switcher = () => {
 
           <i
             className={classNames(
-              styles.icon,
+              cl.icon,
               iconClassName,
               {
-                [styles.hiden]: !isDark,
+                [cl.hiden]: !isDark,
               })}
           >
             <Sun width={iconSize} height={iconSize} color={iconColor} />

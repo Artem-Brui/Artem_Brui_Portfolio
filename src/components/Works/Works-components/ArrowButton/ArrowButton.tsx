@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import cl from "./ArrowButton.module.scss";
-import { Right } from "../../../SVGs/Icons";
-import useTheme from "../../../../customHooks/useTheme";
-import { content } from "../../../../content/mainContent_EN";
 import { handleArrowClick } from "./service";
+import useLanguage from "@customHooks/useLanguage";
+import useTheme from "@customHooks/useTheme";
+import { Right } from "@components/SVGs/Icons";
 
 type Props = {
   direction: string;
@@ -17,6 +17,7 @@ const ArrowButton: React.FC<Props> = ({
   handleClick,
 }) => {
   const { theme, colorDark, colorLight } = useTheme();
+  const { content } = useLanguage();
   const isDark = theme === "dark";
   const arrowColor = isDark ? colorLight : colorDark;
   const worksAmount = content.WorksSection.works.length;

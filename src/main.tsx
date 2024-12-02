@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
-
-import App from "./App.tsx";
-import ContextProvider from "./contexts/Main/ContextProvider.tsx";
+import ContextProvider from "@contexts/Main/ContextProvider";
+import App from "./App";
 
 createRoot(document.getElementById("root")!).render(
   <ContextProvider>

@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import cl from "./WorkItem.module.scss";
-import computer from "../../../../images/computer.webp";
 import React from "react";
-import useTheme from "../../../../customHooks/useTheme";
-import { content } from "../../../../content/mainContent_EN";
 import SkillsList from "../SkillsListWorks";
 import ChallengeList from "../ChallengeListWorks";
+import useLanguage from "@customHooks/useLanguage";
+import useTheme from "@customHooks/useTheme";
+import computer from '@images/computer.webp';
 
 export type WorkType = {
     name: string;
@@ -22,14 +22,12 @@ type Props = {
   index: number;
 };
 
-const WorkItem: React.FC<Props> = ({ work, index,  highlightIndex }) => {
-  const { name, link, previewImage, created, challenges, skills } = work;
-  const { buttonTitle, createdTitle } = content.WorksSection;
-
+const WorkItem: React.FC<Props> = ({ work, index, highlightIndex }) => {
+  const { content } = useLanguage();
   const { theme } = useTheme();
 
-  const workItemClass =
-    theme === "dark" ? cl.work__item__dark : cl.work__item__light;
+  const { name, link, previewImage, created, challenges, skills } = work;
+  const { buttonTitle, createdTitle } = content.WorksSection;
   
   const isHighlighted = index == highlightIndex - 1;
   const listItemDisplay = isHighlighted ? 'flex' : 'none';
@@ -39,7 +37,7 @@ const WorkItem: React.FC<Props> = ({ work, index,  highlightIndex }) => {
       style={{
         display: listItemDisplay,
       }}
-      className={classNames(cl.work__item, workItemClass)}>
+      className={classNames(cl.work__item, cl[`work__item__${theme}`])}>
       <h4 className={cl.title}>{name}</h4>
 
       <p className={cl.date}>
