@@ -13,7 +13,6 @@ const SkillsBoard = () => {
   const { theme, colorDark, colorLight } = useTheme();
   const { windowWidth } = useWindowWidth();
 
-
   const isThemeDark = theme === 'dark';
   const scrollerBGColor = isThemeDark ? colorLight : colorDark;
 
