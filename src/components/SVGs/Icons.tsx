@@ -494,7 +494,7 @@ const Figma: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const FigmaHighlight: React.FC<PropsIcons> = ({ width, height, color }) => {
+const FigmaHighlight: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -577,7 +577,7 @@ const Tailwind: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const EnFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const EnFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -605,7 +605,7 @@ const EnFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const DeFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const DeFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
     width={width}
@@ -625,7 +625,7 @@ const DeFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const UaFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const UaFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -670,7 +670,7 @@ const UaFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const PlFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const PlFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -727,7 +727,7 @@ const PlFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const PtFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const PtFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -761,7 +761,7 @@ const PtFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const EsFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const EsFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -790,7 +790,7 @@ const EsFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
-const FrFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+const FrFlag: React.FC<PropsIcons> = ({ width, height }) => {
   return (
     <svg
       width={width}

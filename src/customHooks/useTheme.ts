@@ -13,6 +13,10 @@ type contextThemeType = {
 export default function useTheme(): contextThemeType {
   const context = useContext(ThemeContext);
 
+  if (!context) {
+    throw new Error('Context not found...')
+  }
+
   const {
     theme,
     toggleTheme,
