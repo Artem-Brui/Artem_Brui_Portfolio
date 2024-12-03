@@ -5,98 +5,98 @@ const skills = [
     name: 'html',
     logo: Html,
     logoColor: '#e95829',
-    descreption: 'The foundation of any website, a markup language for structuring and displaying content.',
+    descreption: 'Die Grundlage jeder Website, eine Markupsprache zum Strukturieren und Anzeigen von Inhalten.',
   },
   {
     name: 'css',
     logo: Css,
     logoColor: '#27a3d9',
-    descreption: 'A language for styling web pages, defining colors, fonts, spacing, and other visual elements.',
+    descreption: 'Eine Sprache zum Styling von Webseiten, zur Definition von Farben, Schriftarten, Abständen und anderen visuellen Elementen.',
   },
   {
     name: 'bootstrap',
     logo: Bootstrap,
     logoColor: '#7711f2',
-    descreption: 'A set of pre-designed styles and components to quickly create responsive and stylish web pages.',
+    descreption: 'Ein Set vorgefertigter Stile und Komponenten, um schnell responsive und stilvolle Webseiten zu erstellen.',
   },
   {
     name: 'bulma',
     logo: Bulma,
     logoColor: '#09caad',
-    descreption: 'A lightweight CSS framework with elegant components that simplifies building modern websites.',
+    descreption: 'Ein leichtgewichtiges CSS-Framework mit eleganten Komponenten, das den Aufbau moderner Webseiten vereinfacht.',
   },
   {
     name: 'tailwind',
     logo: Tailwind,
     logoColor: '#24cabb',
-    descreption: 'A lightweight CSS framework with elegant components that simplifies building modern websites.',
+    descreption: 'Ein leichtgewichtiges CSS-Framework mit eleganten Komponenten, das den Aufbau moderner Webseiten vereinfacht.',
   },
   {
     name: 'sass',
     logo: Sass,
     logoColor: '#cb6197',
-    descreption: 'A preprocessor of CSS that adds variables, nesting, and other features to make styling easier and more organized.',
+    descreption: 'Ein CSS-Präprozessor, der Variablen, Verschachtelung und andere Funktionen hinzufügt, um das Styling einfacher und organisierter zu gestalten.',
   },
   {
     name: 'git',
     logo: Git,
     logoColor: '#e84e32',
-    descreption: 'A version control system for tracking and managing code changes, great for teamwork.',
+    descreption: 'Ein Versionskontrollsystem zur Nachverfolgung und Verwaltung von Codeänderungen, ideal für Teamarbeit.',
   },
   {
     name: 'figma',
     logo: Figma,
     logoColor: '#29befe',
-    descreption: 'A powerful design and prototyping tool that allows for real-time collaboration and streamlined UI/UX workflows.',
+    descreption: 'Ein leistungsstarkes Design- und Prototyping-Tool, das Echtzeit-Zusammenarbeit und optimierte UI/UX-Workflows ermöglicht.',
   },
   {
     name: 'javascript',
     logo: Javascript,
     logoColor: '#c19e38',
-    descreption: 'A programming language that makes websites interactive (e.g., buttons, pop-ups).',
+    descreption: 'Eine Programmiersprache, die Websites interaktiv macht (z. B. Schaltflächen, Pop-ups).',
   },
   {
     name: 'typescript',
     logo: Typescript,
     logoColor: '#0076c6',
-    descreption: 'A "supercharged" version of JavaScript with type-checking to simplify development and reduce errors.',
+    descreption: 'Eine "aufgepowerte" Version von JavaScript mit Typüberprüfung, die die Entwicklung vereinfacht und Fehler reduziert.',
   },
   {
     name: 'react',
     logo: React,
     logoColor: '#0bb4d2',
-    descreption: 'A library for building interactive user interfaces using components.',
+    descreption: 'Eine Bibliothek zum Erstellen interaktiver Benutzeroberflächen mit Komponenten.',
   },
   {
     name: 'redux',
     logo: Redux,
     logoColor: '#7348b6',
-    descreption: 'A tool for managing application state, making it easier to work with data.',  
+    descreption: 'Ein Tool zur Verwaltung des Anwendungszustands, das die Arbeit mit Daten erleichtert.',
   },
   {
     name: 'express',
     logo: Express,
     logoColor: '#000000',
-    descreption: 'A minimalist backend framework for building APIs and web applications on Node.js.',  
+    descreption: 'Ein minimalistisches Backend-Framework zum Erstellen von APIs und Webanwendungen auf Node.js-Basis.',
   },
   {
     name: 'mongodb',
     logo: Mongodb,
     logoColor: '#559034',
-    descreption: 'A database where data is stored as JSON-like objects, perfect for modern applications.',  
+    descreption: 'Eine Datenbank, in der Daten als JSON-ähnliche Objekte gespeichert werden, ideal für moderne Anwendungen.',
   },
 ];
 
 const projects = [
   {
-    name: 'The MET Museum',
+    name: 'Das MET-Museum',
     link: 'https://artem-brui.github.io/MET-Landing-page',
     previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
-    created: 'May 2024',
+    created: 'Mai 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'Einbindung eines Menüs ohne Verwendung von JavaScript.',
+      'Die gleiche Komponente (Kontakte im Header) wird abhängig von der Menü-Sichtbarkeit zweimal verwendet.',
+      'Styling von Eingabefeldern während der Autovervollständigung.',
     ],
     skills: [
       'git',
@@ -107,14 +107,13 @@ const projects = [
     ],
   },
   {
-    name: '2048 Game',
+    name: '2048-Spiel',
     link: 'https://artem-brui.github.io/Game-2048/',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
-    created: 'October 2024',
+    created: 'Oktober 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'Flexibles Bewegen von Zahlen auf dem Spielfeld.',
+      'Animation während der Verschmelzung von Zahlen.',
     ],
     skills: [
       'git',
@@ -125,14 +124,15 @@ const projects = [
     ]
   },
   {
-    name: ' My Portfolio',
+    name: 'Mein Portfolio',
     link: 'https://artem-brui.github.io/Game-2048/',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
-    created: 'December 2024',
+    created: 'Dezember 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'Implementierung von Themenverwaltung.',
+      'Implementierung von Mehrsprachigkeitsmodi.',
+      'Abrundung des Fähigkeits-Dashboards.',
+      'Verarbeitung von Kontaktdaten über Google-Scripts.',
     ],
     skills: [
       'git',
@@ -150,55 +150,56 @@ const projects = [
 const jobs = [
   {
     company: 'DCI Digital Career Institute',
-    location: 'Berlin, Germany',
+    location: 'Berlin, Deutschland',
     jobType: 'Remote',
-    role: 'Tutor on a Full Stack Web Developer course',
+    role: 'Tutor im Full-Stack-Webentwickler-Kurs',
     challenges: [
-      "Compressed timeframes for studying new topics to the level of teaching them.",
+      'Knappe Zeitrahmen für das Studium neuer Themen bis zum Niveau, sie zu unterrichten.',
     ],
     achievements: [
-      "Learned how to effectively study new material in a time-limited environment.",
-      'During the period of work and training, more than 70 practical tasks were solved (SCSS, JavaScript, TypeScript, React, Express, MongoDB).',
-      'Conducting educational live-coding with solving tasks in real time with students.',
+      'Effektives Lernen neuer Inhalte in begrenzter Zeit erlernt.',
+      'Während der Arbeit und Ausbildung wurden über 70 praktische Aufgaben gelöst (SCSS, JavaScript, TypeScript, React, Express, MongoDB).',
+      'Durchführung von Live-Coding-Sitzungen mit Aufgabenlösungen in Echtzeit mit Studenten.',
     ],
     startDate: '01.05.2024',
     endDate: '',
   },
   {
     company: 'Air Team',
-    location: 'Brno, Czech Republic',
+    location: 'Brno, Tschechien',
     jobType: 'Hybrid',
-    role: 'Digital Marketing Specialist',
+    role: 'Spezialist für digitales Marketing',
     achievements: [
-      'Increase in sales for some items by more than 50% due to the advertising I created.',
-      'Creating the basic structure of a new website using Elementor (WordPress) and custom elements written by me.',
-      'Implementation of a new site into the corporate Hubspot system, creation and configuration of all necessary connections.',
+      'Umsatzsteigerung bei einigen Produkten um mehr als 50% durch die von mir erstellte Werbung.',
+      'Erstellung der Grundstruktur einer neuen Website mit Elementor (WordPress) und eigenen Komponenten.',
+      'Implementierung einer neuen Website in das Hubspot-System des Unternehmens, einschließlich der Erstellung und Konfiguration aller erforderlichen Verbindungen.',
     ],
     challenges: [
-      "Self-study of new technologies such as Google Ads, embedding and customization Ads Analytical Tools.",
-      "Create custom website elements using HTML/CSS, as new technologies for themselves. Studying in a short time.",
+      'Selbststudium neuer Technologien wie Google Ads, Einbindung und Anpassung von Ads-Analysetools.',
+      'Erstellung benutzerdefinierter Website-Komponenten mit HTML/CSS als neuen Technologien für sich selbst in kurzer Zeit.',
     ],
     startDate: '01.01.2021',
     endDate: '01.10.2023',
   },
   {
     company: 'Ukrainian Agricultural Market',
-    location: 'Kyiv, Ukraine',
-    jobType: 'On-site',
-    role: 'Head of Procurement Department in Agriculture',
+    location: 'Kiew, Ukraine',
+    jobType: 'Vor Ort',
+    role: 'Leiter der Einkaufsabteilung für Landwirtschaft',
     achievements: [
-      'Three purchasing departments were created from scratch.',
-      'More than Fifty procurement specialists were trained in effective procurement.',
-      'Many contracts for the supply of grain in the amount of more than One million tons have been signed and fulfilled.',
+      'Drei Einkaufsabteilungen wurden von Grund auf neu geschaffen.',
+      'Über 50 Einkaufsspezialisten wurden in effizientem Einkauf geschult.',
+      'Zahlreiche Verträge über die Lieferung von mehr als einer Million Tonnen Getreide wurden abgeschlossen und erfüllt.',
     ],
     challenges: [
-      'Implementation of an IT solution into the existing system of interaction between employees.',
-      "Expanding the department's activities to include fulfilling export supply contracts.",
+      'Implementierung einer IT-Lösung in das bestehende Mitarbeitersystem.',
+      'Erweiterung der Abteilungsaktivitäten um die Erfüllung von Exportlieferverträgen.',
     ],
     startDate: '01.09.2009',
     endDate: '31.12.2020',
   },
 ];
+
 
 export const content = {
   Header: {
@@ -207,81 +208,81 @@ export const content = {
   },
   HomeSection: {
     greating: [
-      "Hey,",
-      "I'm Artem",
-      "Full Stack Developer"
+      "Hallo,",
+      "Ich bin Artem",
+      "Full Stack Entwickler"
     ],
-    descreption: "Dedicated to clean code, seamless collaboration, and helping your team deliver outstanding results.",
-    callToAction: "Let's Talk",
+    descreption: "Engagiert für sauberen Code, nahtlose Zusammenarbeit und dabei zu helfen, außergewöhnliche Ergebnisse zu liefern.",
+    callToAction: "Melden",
     counter: {
         projectsAmount: projects.length,
-        projectsTitle: 'Self Projects',
+        projectsTitle: 'Eigene Projekte',
       carrierStarted: '2021',
-      carrierTitle: 'Years of Experiance',
+      carrierTitle: 'Jahre Erfahrung',
       skillsAmount: skills.length,
-      skillsTitle: 'Technical Skills',
+      skillsTitle: 'Technische Fähigkeiten',
     }
   },
   AboutSection: {
-    sectionName: 'About me',
-    greating: 'Hello!',
+    sectionName: 'Über mich',
+    greating: 'Hallo!',
     paragraphsList: [
       {
-        paragraph: "My name is Artem and I specialize in Web Developement that utilizes JavaScript TypeScript, React, Express, and MongoDB etc."
+        paragraph: "Mein Name ist Artem und ich spezialisiere mich auf Webentwicklung mit JavaScript, TypeScript, React, Express und MongoDB usw."
       },
       {
-        paragraph: "I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving."
+        paragraph: "Ich bin eine hochmotivierte Person und ewiger Optimist, der sich darauf konzentriert, klaren, präzisen und robusten Code zu schreiben. Ich strebe danach, niemals aufzuhören zu lernen und mich zu verbessern."
       },
       {
-        paragraph: "When I'm not coding, I am writing blogs, reading, or picking up some new hands-on art project like photography."
+        paragraph: "Wenn ich nicht programmiere, schreibe ich Blogs, lese oder beschäftige mich mit neuen handwerklichen Kunstprojekten wie Fotografie."
       },
       {
-        paragraph: "With a strong focus on problem-solving, client and project management, and analytical thinking, I am self-motivated and equipped to deliver robust web solutions that align with business objectives."
+        paragraph: "Mit einem starken Fokus auf Problemlösung, Kunden- und Projektmanagement sowie analytischem Denken bin ich selbstmotiviert und in der Lage, robuste Weblösungen zu liefern, die mit den Geschäftsanforderungen übereinstimmen."
       },
     ]
   },
   SkillsSection: {
     sectionName: 'Skills',
-    sectionHeader: 'I am striving to never stop learning and improving',
+    sectionHeader: 'Ich strebe danach, niemals aufzuhören zu lernen und mich zu verbessern',
     skillsList: skills,
   },
   WorksSection: {
-    sectionName: 'Works',
-    sectionHeader: 'I had the pleasure of working with these awesome projects',
+    sectionName: 'Arbeiten',
+    sectionHeader: 'Ich hatte das Vergnügen, an diesen großartigen Projekten zu arbeiten',
     works: projects,
-    createdTitle: 'Created:',
-    challengesTitle: 'Challenges:',
-    buttonTitle: 'Demo Link',
+    createdTitle: 'Erstellt:',
+    challengesTitle: 'Herausforderungen:',
+    buttonTitle: 'Demo-Link',
   },
   ExperienceSection: {
-    sectionName: 'Experience',
-    sectionHeader: 'I’ve had the privilege of contributing to amazing teams and impactful projects',
-    present: 'present',
+    sectionName: 'Erfahrung',
+    sectionHeader: 'Ich hatte das Privileg, zu großartigen Teams und einflussreichen Projekten beizutragen',
+    present: 'heute',
     jobs: jobs,
     titles: {
-      challenges: 'Challenges',
-      achievements: 'Achievements',
+      challenges: 'Herausforderungen',
+      achievements: 'Erfolge',
     }
   },
   ContactSection: {
-    sectionName: "Contact",
-    sectionHeader: "I will be happy to consider any proposals for cooperation",
-    formHeader: "Send Me a Message",
+    sectionName: "Kontakt",
+    sectionHeader: "Ich freue mich über jede Anfrage zur Zusammenarbeit",
+    formHeader: "Schreib mir eine Nachricht",
     form: {
       formLabels: {
-        name: "Your name *",
-        email: "Your email *",
-        message: "Your message *",
-        button: "Send Message",
+        name: "Ihr Name *",
+        email: "Ihre E-Mail *",
+        message: "Ihre Nachricht *",
+        button: "Nachricht senden",
       },
       formPlaceholders: {
-        name: "Enter your name",
-        email: "Enter your email",
-        message: "Enter your message",
+        name: "Geben Sie Ihren Namen ein",
+        email: "Geben Sie Ihre E-Mail-Adresse ein",
+        message: "Geben Sie Ihre Nachricht ein",
       },
     }
   },
   Footer: {
-    textRights: '© 2024 Artem Brui. All rights reserved.',
+    textRights: '© 2024 Artem Brui. Alle Rechte vorbehalten.',
   },
 }

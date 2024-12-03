@@ -89,14 +89,14 @@ const skills = [
 
 const projects = [
   {
-    name: 'The MET Museum',
+    name: 'MET Музей',
     link: 'https://artem-brui.github.io/MET-Landing-page',
     previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
     created: 'Травень 2024',
     challenges: [
-      'один hub.io/Game-2048/previ',
-      'два hub.io/Game-2048/previ',
-      'три hub.io/Game-2048/previ',
+      'Реалізація управління меню без використання JavaScript.',
+      'Використання одного і того ж елемента (контакти в шапці) двічі в різних місцях, залежно від стану видимості меню.',
+      'Стилізація інпутів під час автозаповнення.',
     ],
     skills: [
       'git',
@@ -107,14 +107,13 @@ const projects = [
     ],
   },
   {
-    name: '2048 Game',
+    name: 'Гра 2048',
     link: 'https://artem-brui.github.io/Game-2048/',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
     created: 'Жовтень 2024',
     challenges: [
-      'один hub.io/Game-2048/previ',
-      'два hub.io/Game-2048/previ',
-      'три hub.io/Game-2048/previ',
+      'Гнучкий рух чисел по полю.',
+      'Анімація під час об\'єднання.',
     ],
     skills: [
       'git',
@@ -125,14 +124,15 @@ const projects = [
     ]
   },
   {
-    name: ' My Portfolio',
+    name: 'Моє портфоліо',
     link: 'https://artem-brui.github.io/Game-2048/',
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
     created: 'Грудень 2024',
     challenges: [
-      'один hub.io/Game-2048/previ',
-      'два hub.io/Game-2048/previ',
-      'три hub.io/Game-2048/previ',
+      'Реалізація управління темами.',
+      'Реалізація використання декількох мов.',
+      'Обертання дошки навичок.',
+      'Обробка даних з контактної форми через Google Scripts.',
     ],
     skills: [
       'git',
@@ -209,10 +209,10 @@ export const content = {
     greating: [
       "Привіт,",
       "Я Артем",
-      "Розробник Full Stack",
+      "Full Stack Розробник",
     ],
     descreption: "Присвячений чистому коду, бездоганній співпраці та допомозі вашій команді в досягненні відмінних результатів.",
-    callToAction: "Зв'яжіться зі мною",
+    callToAction: "Написати",
     counter: {
         projectsAmount: projects.length,
         projectsTitle: 'Особисті проєкти',

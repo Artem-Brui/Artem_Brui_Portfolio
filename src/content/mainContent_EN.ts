@@ -1,4 +1,4 @@
-import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript, EnFlag, DeFlag, UaFlag, PlFlag } from "../components/SVGs/Icons";
+import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript, EnFlag } from "../components/SVGs/Icons";
 
 const skills = [
   {
@@ -94,9 +94,9 @@ const projects = [
     previewImage: 'https://artem-brui.github.io/MET-Landing-page/preview.webp',
     created: 'May 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'An implementation of a menu managing without JavaScript.',
+      'Using the same element (contacts in a header) twice in different places, depending on a menu visibility status.',
+      'A stylling inputs during an autofill.',
     ],
     skills: [
       'git',
@@ -112,9 +112,8 @@ const projects = [
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
     created: 'October 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'The flexible movement of numbers through the field.',
+      'An animation during the merging.',
     ],
     skills: [
       'git',
@@ -130,9 +129,10 @@ const projects = [
     previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
     created: 'December 2024',
     challenges: [
-      'one hub.io/Game-2048/previ',
-      'two hub.io/Game-2048/previ',
-      'three hub.io/Game-2048/previ',
+      'Implementation of theme managing.',
+      'Implementation of the use of multiple languages.',
+      'The skills board rounding.',
+      "The processing contact form's data via google-scripts.",
     ],
     skills: [
       'git',

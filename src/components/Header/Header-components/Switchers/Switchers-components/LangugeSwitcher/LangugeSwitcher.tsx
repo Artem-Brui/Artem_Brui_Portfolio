@@ -10,6 +10,12 @@ const LangugeSwitcher = () => {
   const [isLangListVisible, setIsLangListVisible] = useState(false);
   const { language, toggleLanguage } = useLanguage();
 
+  const savedLanguage = window.localStorage.getItem('portfolioLanguage');
+
+  if (!savedLanguage) {
+    window.localStorage.setItem('portfolioLanguage', language);
+  }
+
   const flagWidth = useWindowWidth().windowWidth > 767 ? 25 : 21;
   const flagHeight = (flagWidth / 3) * 2;
 
@@ -19,6 +25,7 @@ const LangugeSwitcher = () => {
 
       if (newLanguage) {
         toggleLanguage(newLanguage);
+        window.localStorage.setItem('portfolioLanguage', newLanguage);
         setIsLangListVisible(false);
       }
     } else {
@@ -32,7 +39,9 @@ const LangugeSwitcher = () => {
         const FlagComponent: React.FC<PropsIcons> =
           languages[lang as keyof typeof languages].Header.languageFlag;
 
-        const isCurrent = isLangListVisible || lang === language;
+        const isCurrent = savedLanguage
+          ? isLangListVisible || lang === savedLanguage
+          : isLangListVisible || lang === language;
 
         return (
           <li

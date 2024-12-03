@@ -19,7 +19,10 @@ const ContextProvider: React.FC<ChildrenType> = ({ children }) => {
 
   // ==LANGUAGE
 
-  const [language, setLanguage] = useState("en");
+  const savedLanguage = window.localStorage.getItem('portfolioLanguage');
+
+
+  const [language, setLanguage] = useState(savedLanguage || "en");
 
   const toggleLanguage = (newLanguage: string): void => {
     setLanguage(newLanguage);

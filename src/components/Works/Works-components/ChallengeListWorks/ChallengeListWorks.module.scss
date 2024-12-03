@@ -7,6 +7,10 @@
     padding-top: 5px;
   }
 
+  & > li {
+    margin-top: 5px;
+  }
+
   & * {
     text-transform: none;
   }
@@ -14,28 +18,28 @@
 
 @include OnMobile {
   .challenges_list {
-    font-size: calc($mobile-font-size - 1px);
+    font-size: calc($mobile-font-size - 2px);
     line-height: calc($mobile-line-height);
   }
 }
 
 @include OnTablet {
   .challenges_list {
-    font-size: calc($tablet-font-size - 1px);
+    font-size: calc($tablet-font-size - 2px);
     line-height: calc($tablet-line-height);
   }
 }
 
 @include OnDesktop {
   .challenges_list {
-    font-size: calc($desktop-font-size - 1px);
+    font-size: calc($desktop-font-size - 3px);
     line-height: calc($desktop-line-height);
   }
 }
 
 @include OnLarge {
   .challenges_list {
-    font-size: calc($large-font-size - 1px);
+    font-size: calc($large-font-size - 3px);
     line-height: calc($large-line-height);
   }
 }
