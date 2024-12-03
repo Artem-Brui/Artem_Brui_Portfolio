@@ -1,3 +1,3 @@
-import Greating from './Greating';
+import Counter from './Counter';
 
-export default Greating;
+export default Counter;
