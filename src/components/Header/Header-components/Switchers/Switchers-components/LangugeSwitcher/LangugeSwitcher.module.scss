@@ -26,7 +26,11 @@
 }
 
 @include OnDesktop {
+  .language_list {
+    gap: 15px;
+  }
   .language_title {
     font-size: 14px;
+    
   }
 }

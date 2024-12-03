@@ -11,6 +11,7 @@ const LangugeSwitcher = () => {
   const { language, toggleLanguage } = useLanguage();
 
   const savedLanguage = window.localStorage.getItem('portfolioLanguage');
+  const attributeValue = savedLanguage === 'ua' ? 'uk' : savedLanguage;
 
   if (!savedLanguage) {
     window.localStorage.setItem('portfolioLanguage', language);
@@ -22,8 +23,12 @@ const LangugeSwitcher = () => {
   const handleItemClick: React.MouseEventHandler<HTMLLIElement> = (event) => {
     if (isLangListVisible) {
       const newLanguage = event.currentTarget.getAttribute("data-language");
+      
 
       if (newLanguage) {
+        const html: HTMLCollectionOf<HTMLHtmlElement> = document.getElementsByTagName('html');
+        if (attributeValue)[...html][0].setAttribute('lang', attributeValue);
+        
         toggleLanguage(newLanguage);
         window.localStorage.setItem('portfolioLanguage', newLanguage);
         setIsLangListVisible(false);

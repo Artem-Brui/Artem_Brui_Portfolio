@@ -209,11 +209,11 @@ export const content = {
   HomeSection: {
     greating: [
       "Hallo,",
-      "Ich bin Artem",
+      "Ich bin Artem - ",
       "Full Stack Entwickler"
     ],
-    descreption: "Engagiert für sauberen Code, nahtlose Zusammenarbeit und dabei zu helfen, außergewöhnliche Ergebnisse zu liefern.",
-    callToAction: "Melden",
+    descreption: "Fokussiert auf die Erstellung von hochwertigem Code, den Aufbau effektiver Kommunikation und die Unterstützung des Teams bei der Erreichung von Erfolg.",
+    callToAction: "Kontakt",
     counter: {
         projectsAmount: projects.length,
         projectsTitle: 'Eigene Projekte',
@@ -234,10 +234,10 @@ export const content = {
         paragraph: "Ich bin eine hochmotivierte Person und ewiger Optimist, der sich darauf konzentriert, klaren, präzisen und robusten Code zu schreiben. Ich strebe danach, niemals aufzuhören zu lernen und mich zu verbessern."
       },
       {
-        paragraph: "Wenn ich nicht programmiere, schreibe ich Blogs, lese oder beschäftige mich mit neuen handwerklichen Kunstprojekten wie Fotografie."
+        paragraph: "Mit Erfahrung in der Lösung komplexer Probleme, im Projektmanagement und in der Datenanalyse entwickle ich Weblösungen, die Unternehmensstrategien effektiv unterstützen."
       },
       {
-        paragraph: "Mit einem starken Fokus auf Problemlösung, Kunden- und Projektmanagement sowie analytischem Denken bin ich selbstmotiviert und in der Lage, robuste Weblösungen zu liefern, die mit den Geschäftsanforderungen übereinstimmen."
+        paragraph: "Wenn ich keinen Code schreibe, widme ich meine Zeit dem Radfahren, Sport, Laufen und glücklichen Momenten mit meiner Frau und meinen zwei wunderbaren Kindern."
       },
     ]
   },

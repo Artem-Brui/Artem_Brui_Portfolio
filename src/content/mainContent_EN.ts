@@ -124,9 +124,9 @@ const projects = [
     ]
   },
   {
-    name: ' My Portfolio',
-    link: 'https://artem-brui.github.io/Game-2048/',
-    previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
+    name: 'My Portfolio',
+    link: 'https://artem-brui.github.io/Artem_Brui_Portfolio/',
+    previewImage: 'https://artem-brui.github.io/Artem_Brui_Portfolio/preview.webp',
     created: 'December 2024',
     challenges: [
       'Implementation of theme managing.',
@@ -208,10 +208,10 @@ export const content = {
   HomeSection: {
     greating: [
       "Hey,",
-      "I'm Artem",
+      "I'm Artem - ",
       "Full Stack Developer"
     ],
-    descreption: "Dedicated to clean code, seamless collaboration, and helping your team deliver outstanding results.",
+    descreption: "Focused on creating high-quality code, building effective communication, and supporting the team in achieving success.",
     callToAction: "Let's Talk",
     counter: {
         projectsAmount: projects.length,
@@ -227,16 +227,16 @@ export const content = {
     greating: 'Hello!',
     paragraphsList: [
       {
-        paragraph: "My name is Artem and I specialize in Web Developement that utilizes JavaScript TypeScript, React, Express, and MongoDB etc."
+        paragraph: "My name is Artem and I specialize in Web Developement that utilizes JavaScript TypeScript, React, Express, and MongoDB."
       },
       {
         paragraph: "I am a highly motivated individual and eternal optimist dedicated to writing clear, concise, robust code that works. Striving to never stop learning and improving."
       },
       {
-        paragraph: "When I'm not coding, I am writing blogs, reading, or picking up some new hands-on art project like photography."
+        paragraph: "With experience in solving complex problems, project management, and data analysis, I develop web solutions that effectively support business strategies."
       },
       {
-        paragraph: "With a strong focus on problem-solving, client and project management, and analytical thinking, I am self-motivated and equipped to deliver robust web solutions that align with business objectives."
+        paragraph: "When I’m not writing code, I dedicate my time to cycling, sports, running, and joyful moments with my wife and two wonderful children."
       },
     ]
   },

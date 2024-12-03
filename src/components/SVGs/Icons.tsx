@@ -608,17 +608,13 @@ const EnFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
 const DeFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
   return (
     <svg
-      width={width}
-      height={height}
-      viewBox="0 0 36 36"
-      xmlns="http://www.w3.org/2000/svg"
-      aria-hidden="true"
-      role="img"
-      preserveAspectRatio="xMidYMid meet"
+    width={width}
+    height={height}
+      viewBox="8 0 36 36"
     >
       <path
         fill="#FFCD05"
-        d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z"
+        d="M0 27a4 4 0 0 0 4 4h29a4 4 0 0 0 4-4v-4H0v4z"
       ></path>
       <path fill="#ED1F24" d="M0 14h36v9H0z"></path>
       <path
