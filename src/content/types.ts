@@ -31,6 +31,7 @@ export type JobItemContentType = {
 export type ContentType = {
   Header: {
     ownerName: string;
+    languageFlag: React.FC<PropsIcons>;
   };
   HomeSection: {
     greating: string[];

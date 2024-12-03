@@ -1,7 +1,7 @@
 export type PropsIcons = {
   width: number;
   height: number;
-  color: string;
+  color?: string;
 };
 
 const Linkedin: React.FC<PropsIcons> = ({ width, height, color }) => {
@@ -577,6 +577,247 @@ const Tailwind: React.FC<PropsIcons> = ({ width, height, color }) => {
   );
 };
 
+const EnFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path
+        fill="#00247D"
+        d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM36 13V9.059L30.371 13zM13 5H4.664L13 10.837z"
+      ></path>
+      <path
+        fill="#CF1B2B"
+        d="M25.14 23l9.712 6.801a3.977 3.977 0 0 0 .99-1.749L28.627 23H25.14zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943V23zm10-10h2.141l9.711-6.8a3.988 3.988 0 0 0-1.937-1.085L23 12.057V13zm-12.141 0L1.148 6.2a3.994 3.994 0 0 0-.991 1.749L7.372 13h3.487z"
+      ></path>
+      <path
+        fill="#EEE"
+        d="M36 21H21v10h2v-5.836L31.335 31H32a3.99 3.99 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36v-2zM0 21v2h5.63L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21H0zM36 9a3.983 3.983 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4.001 4.001 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.629L36 9.059V9zM13 5v5.837L4.664 5H4a3.985 3.985 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A3.968 3.968 0 0 0 0 9v.059L5.628 13H0v2h15V5h-2z"
+      ></path>
+      <path fill="#CF1B2B" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z"></path>
+    </svg>
+  );
+};
+
+const DeFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path
+        fill="#FFCD05"
+        d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z"
+      ></path>
+      <path fill="#ED1F24" d="M0 14h36v9H0z"></path>
+      <path
+        fill="#141414"
+        d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z"
+      ></path>
+    </svg>
+  );
+};
+
+const UaFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 -4 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_503_2809)">
+        <rect width="28" height="20" rx="2" fill="white" />
+        <mask
+          id="mask0_503_2809"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="28"
+          height="20"
+        >
+          <rect width="28" height="20" rx="2" fill="white" />
+        </mask>
+        <g mask="url(#mask0_503_2809)">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0 10.6667H28V0H0V10.6667Z"
+            fill="#156DD1"
+          />
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0 20H28V10.6667H0V20Z"
+            fill="#FFD948"
+          />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_503_2809">
+          <rect width="28" height="20" rx="2" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+const PlFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 -4 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clipPath="url(#clip0_503_4159)">
+        <rect
+          x="0.25"
+          y="0.25"
+          width="27.5"
+          height="19.5"
+          rx="1.75"
+          fill="white"
+          stroke="#F5F5F5"
+          stroke-width="0.5"
+        />
+        <mask
+          id="mask0_503_4159"
+          maskUnits="userSpaceOnUse"
+          x="0"
+          y="0"
+          width="28"
+          height="20"
+        >
+          <rect
+            x="0.25"
+            y="0.25"
+            width="27.5"
+            height="19.5"
+            rx="1.75"
+            fill="white"
+            stroke="white"
+            stroke-width="0.5"
+          />
+        </mask>
+        <g mask="url(#mask0_503_4159)">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0 20H28V9.33333H0V20Z"
+            fill="#EB2A50"
+          />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_503_4159">
+          <rect width="28" height="20" rx="2" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+const PtFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path
+        fill="#060"
+        d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z"
+      ></path>
+      <path
+        fill="#D52B1E"
+        d="M32 5H15v26h17a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"
+      ></path>
+      <path
+        fill="#FFCC4D"
+        d="M15 10a8 8 0 0 0-8 8a8 8 0 1 0 16 0a8 8 0 0 0-8-8zm-6.113 4.594l1.602 1.602l-2.46 1.23a6.95 6.95 0 0 1 .858-2.832zm-.858 3.979l4.4 2.207l-2.706 1.804l.014.021a6.963 6.963 0 0 1-1.708-4.032zM14 24.92a6.945 6.945 0 0 1-2.592-.92H14v.92zM14 23h-3.099L14 20.934V23zm0-3.268l-.607.405L9.118 18l2.116-1.058L14 19.707v.025zm0-1.439l-3.543-3.543l3.543.59v2.953zm0-3.992l-4.432-.713A6.983 6.983 0 0 1 14 11.08v3.221zm7.113.293a6.95 6.95 0 0 1 .858 2.833l-2.46-1.23l1.602-1.603zM16 11.08a6.987 6.987 0 0 1 4.432 2.508L16 14.301V11.08zm0 4.26l3.543-.591L16 18.293V15.34zm0 4.367l2.765-2.765L20.882 18l-4.274 2.137l-.608-.405v-.025zm0 5.213V24h2.592a6.945 6.945 0 0 1-2.592.92zM16 23v-2.066L19.099 23H16zm4.264-.395l.014-.021l-2.706-1.804l4.4-2.207a6.976 6.976 0 0 1-1.708 4.032z"
+      ></path>
+      <path fill="#D52B1E" d="M11 13v7a4 4 0 0 0 8 0v-7h-8z"></path>
+      <path fill="#FFF" d="M12 14v6a3 3 0 0 0 6 0v-6h-6z"></path>
+      <path fill="#829ACD" d="M13 17h4v2h-4z"></path>
+      <path fill="#829ACD" d="M14 16h2v4h-2z"></path>
+      <path
+        fill="#039"
+        d="M12 17h1v2h-1zm2 0h2v2h-2zm3 0h1v2h-1zm-3 3h2v2h-2zm0-6h2v2h-2z"
+      ></path>
+    </svg>
+  );
+};
+
+const EsFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      role="img"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path
+        fill="#C60A1D"
+        d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z"
+      ></path>
+      <path fill="#FFC400" d="M0 12h36v12H0z"></path>
+      <path fill="#EA596E" d="M9 17v3a3 3 0 1 0 6 0v-3H9z"></path>
+      <path fill="#F4A2B2" d="M12 16h3v3h-3z"></path>
+      <path fill="#DD2E44" d="M9 16h3v3H9z"></path>
+      <ellipse fill="#EA596E" cx="12" cy="14.5" rx="3" ry="1.5"></ellipse>
+      <ellipse fill="#FFAC33" cx="12" cy="13.75" rx="3" ry=".75"></ellipse>
+      <path fill="#99AAB5" d="M7 16h1v7H7zm9 0h1v7h-1z"></path>
+      <path
+        fill="#66757F"
+        d="M6 22h3v1H6zm9 0h3v1h-3zm-8-7h1v1H7zm9 0h1v1h-1z"
+      ></path>
+    </svg>
+  );
+};
+
+const FrFlag: React.FC<PropsIcons> = ({ width, height, color }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      role="img"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <path
+        fill="#ED2939"
+        d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"
+      ></path>
+      <path
+        fill="#002495"
+        d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"
+      ></path>
+      <path fill="#EEE" d="M12 5h12v26H12z"></path>
+    </svg>
+  );
+};
+
 export {
   Linkedin,
   GitHub,
@@ -600,4 +841,11 @@ export {
   FigmaHighlight,
   Right,
   Tailwind,
+  EnFlag,
+  DeFlag,
+  UaFlag,
+  PlFlag,
+  PtFlag,
+  EsFlag,
+  FrFlag,
 };

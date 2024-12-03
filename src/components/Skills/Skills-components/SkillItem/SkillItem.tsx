@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import cl from "./SkillItem.module.scss";
-import { SkillType } from "@contexts/Main/types";
 import useTheme from "@customHooks/useTheme";
 import useWindowWidth from "@customHooks/useWindowScreen";
 import useLanguage from "@customHooks/useLanguage";
 import { FigmaHighlight, PropsIcons } from "@components/SVGs/Icons";
+import { SkillType } from "contexts/Main/types";
 
 type Props = {
   skill: SkillType;
@@ -28,7 +28,7 @@ const SkillItem: React.FC<Props> = ({ skill, index, moveIndex, circleRadius, hig
 
   let iconSize = 0; 
   if (windowWidth > 1279) {
-    iconSize = isHighlighted ? 120 : 50;
+    iconSize = isHighlighted ? 100 : 50;
   } else {
     iconSize = isHighlighted ? 80 : 40;
   }

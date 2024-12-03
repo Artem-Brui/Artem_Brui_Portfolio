@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ContentType } from "@content/types.ts";
-import Context from "@contexts/Main/service";
+import Context from "contexts/Main/service";
 
 type contextLanguageType = {
   language: string;

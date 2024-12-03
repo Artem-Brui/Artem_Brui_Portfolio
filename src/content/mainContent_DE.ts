@@ -1,4 +1,4 @@
-import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript } from "../components/SVGs/Icons";
+import { Bootstrap, Bulma, Css, DeFlag, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript } from "../components/SVGs/Icons";
 
 const skills = [
   {
@@ -203,6 +203,7 @@ const jobs = [
 export const content = {
   Header: {
     ownerName: 'Artem Brui',
+    languageFlag: DeFlag,
   },
   HomeSection: {
     greating: [

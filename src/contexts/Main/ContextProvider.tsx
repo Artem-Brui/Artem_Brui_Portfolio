@@ -19,7 +19,7 @@ const ContextProvider: React.FC<ChildrenType> = ({ children }) => {
 
   // ==LANGUAGE
 
-  const [language, setLanguage] = useState("ua");
+  const [language, setLanguage] = useState("en");
 
   const toggleLanguage = (newLanguage: string): void => {
     setLanguage(newLanguage);

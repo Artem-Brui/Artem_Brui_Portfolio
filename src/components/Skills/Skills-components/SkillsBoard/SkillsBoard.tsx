@@ -42,11 +42,7 @@ const SkillsBoard = () => {
 
 
   //RADIUS
-  let circleRadius = 130;
-
-  if (windowWidth > 1279) {
-    circleRadius = 200;
-  }
+  const circleRadius = windowWidth > 1279 ? 180 : 130;
 
   //TITLE
   const anglePerSkill = 360 / skillsListCopy.length;
