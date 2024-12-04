@@ -10,7 +10,7 @@ const Home = () => {
   const { theme } = useTheme();
 
   return (
-    <section className={classNames(cl.home, cl[theme])} >
+    <section id='home' className={classNames(cl.home, cl[theme])} >
       <div className={cl.section_container}>
         <Photo />
         <Greating />

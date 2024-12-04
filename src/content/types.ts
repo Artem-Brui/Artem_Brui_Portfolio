@@ -34,6 +34,7 @@ export type ContentType = {
     languageFlag: React.FC<PropsIcons>;
   };
   HomeSection: {
+    sectionName: string;
     greating: string[];
     descreption: string;
     callToAction: string;

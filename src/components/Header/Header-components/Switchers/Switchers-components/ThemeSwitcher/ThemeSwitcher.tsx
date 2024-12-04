@@ -11,7 +11,7 @@ const ThemeSwitcher = () => {
   const [isDark, setIsDark] = useState(theme === "dark");
 
   const iconColor = !isDark ? colorBrand : "#fafa83";
-  const iconSize = useWindowWidth().windowWidth > 1279 ? 18 : 13;
+  const iconSize = useWindowWidth().windowWidth > 1279 ? 15 : 13;
 
   const handleClick = () => {
     toggleTheme();

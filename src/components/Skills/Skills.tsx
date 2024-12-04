@@ -13,7 +13,7 @@ const Skills = () => {
   const textHead = content.SkillsSection.sectionHeader;
 
   return (
-    <section className={classNames(cl.skills, cl[theme])}>
+    <section  id='skills' className={classNames(cl.skills, cl[theme])}>
       <SectionHead title={title} text={textHead} />
       <SkillsBoard />
     </section>

@@ -10,27 +10,36 @@ const LangugeSwitcher = () => {
   const [isLangListVisible, setIsLangListVisible] = useState(false);
   const { language, toggleLanguage } = useLanguage();
 
-  const savedLanguage = window.localStorage.getItem('portfolioLanguage');
-  const attributeValue = savedLanguage === 'ua' ? 'uk' : savedLanguage;
+  const savedLanguage = window.localStorage.getItem("portfolioLanguage");
+  const attributeValue = savedLanguage === "ua" ? "uk" : savedLanguage;
 
   if (!savedLanguage) {
-    window.localStorage.setItem('portfolioLanguage', language);
+    window.localStorage.setItem("portfolioLanguage", language);
   }
 
-  const flagWidth = useWindowWidth().windowWidth > 767 ? 40 : 30;
+  let flagWidth = 30;
+
+  if (useWindowWidth().windowWidth > 1279) {
+    flagWidth = 25;
+  }
+
+  if (useWindowWidth().windowWidth > 1919) {
+    flagWidth = 28;
+  }
+
   const flagHeight = (flagWidth / 3) * 2;
 
   const handleItemClick: React.MouseEventHandler<HTMLLIElement> = (event) => {
     if (isLangListVisible) {
       const newLanguage = event.currentTarget.getAttribute("data-language");
-      
 
       if (newLanguage) {
-        const html: HTMLCollectionOf<HTMLHtmlElement> = document.getElementsByTagName('html');
-        if (attributeValue)[...html][0].setAttribute('lang', attributeValue);
-        
+        const html: HTMLCollectionOf<HTMLHtmlElement> =
+          document.getElementsByTagName("html");
+        if (attributeValue) [...html][0].setAttribute("lang", attributeValue);
+
         toggleLanguage(newLanguage);
-        window.localStorage.setItem('portfolioLanguage', newLanguage);
+        window.localStorage.setItem("portfolioLanguage", newLanguage);
         setIsLangListVisible(false);
       }
     } else {

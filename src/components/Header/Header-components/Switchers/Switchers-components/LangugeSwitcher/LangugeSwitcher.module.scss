@@ -17,7 +17,7 @@
 }
 
 .language_title {
-  font-size: $mobile-font-size - 1px;
+  font-size: $mobile-font-size;
   text-transform: uppercase;
 }
 
@@ -25,11 +25,29 @@
   display: none;
 }
 
+@include OnTablet {
+  .language_list {
+    gap: 15px;
+  }
+  .language_title {
+    font-size: $tablet-font-size - 3px;
+  }
+}
+
 @include OnDesktop {
   .language_list {
     gap: 15px;
   }
   .language_title {
-    font-size: $desktop-font-size - 1px;
+    font-size: $desktop-font-size - 5px;
+  }
+}
+
+@include OnLarge {
+  .language_list {
+    gap: 15px;
+  }
+  .language_title {
+    font-size: $desktop-font-size - 3px;
   }
 }

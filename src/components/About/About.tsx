@@ -9,7 +9,7 @@ const About = () => {
   const { theme } = useTheme();
 
   return (
-    <section className={classNames(cl.about, cl[theme])}>
+    <section id='about' className={classNames(cl.about, cl[theme])}>
       <div className={cl.section_container}>
         <AboutTitle />
         <AboutText />

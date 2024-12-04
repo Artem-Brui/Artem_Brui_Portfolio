@@ -207,6 +207,7 @@ export const content = {
     languageFlag: DeFlag,
   },
   HomeSection: {
+    sectionName: 'Home',
     greating: [
       "Hallo,",
       "Ich bin Artem - ",

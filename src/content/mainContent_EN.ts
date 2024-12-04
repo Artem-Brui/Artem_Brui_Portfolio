@@ -206,6 +206,7 @@ export const content = {
     languageFlag: EnFlag,
   },
   HomeSection: {
+    sectionName: 'Main',
     greating: [
       "Hey,",
       "I'm Artem - ",
@@ -223,7 +224,7 @@ export const content = {
     }
   },
   AboutSection: {
-    sectionName: 'About me',
+    sectionName: 'About',
     greating: 'Hello!',
     paragraphsList: [
       {

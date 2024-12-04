@@ -125,8 +125,8 @@ const projects = [
   },
   {
     name: 'Моє портфоліо',
-    link: 'https://artem-brui.github.io/Game-2048/',
-    previewImage: 'https://artem-brui.github.io/Game-2048/preview.webp',
+    link: 'https://artem-brui.github.io/Artem_Brui_Portfolio/',
+    previewImage: 'https://artem-brui.github.io/Artem_Brui_Portfolio/preview.webp',
     created: 'Грудень 2024',
     challenges: [
       'Реалізація управління темами.',
@@ -206,6 +206,7 @@ export const content = {
     languageFlag: UaFlag,
   },
   HomeSection: {
+    sectionName: 'Головна',
     greating: [
       "Привіт,",
       "Я Артем -",
@@ -264,7 +265,7 @@ export const content = {
     }
   },
   ContactSection: {
-    sectionName: "Контакти",
+    sectionName: "Контакт",
     sectionHeader: "Буду радий розглянути будь-які пропозиції щодо співпраці",
     formHeader: "Напишіть мені",
     form: {

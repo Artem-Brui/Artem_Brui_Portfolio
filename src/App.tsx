@@ -15,7 +15,7 @@ import useTheme from "@customHooks/useTheme";
 const App = () => {
   const { theme } = useTheme();
 
-  return (  
+  return (
     <div className={classNames("page", theme)}>
       <Header />
       <Home />

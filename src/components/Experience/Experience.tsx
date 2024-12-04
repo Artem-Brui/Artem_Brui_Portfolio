@@ -15,7 +15,7 @@ const Experience = () => {
   const jobList = [...content.ExperienceSection.jobs];
 
   return (
-    <section className={classNames(cl.experience, cl[theme])}>
+    <section id='experience' className={classNames(cl.experience, cl[theme])}>
       <SectionHead title={title} text={textHead} />
       <ul className={cl.jobs__list}>
         {jobList.map((job, index) => {

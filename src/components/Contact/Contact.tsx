@@ -13,7 +13,7 @@ const Contact = () => {
   const textHead = content.ContactSection.sectionHeader;
 
   return (
-    <section className={classNames(cl.contact, cl[theme])}>
+    <section id='contact' className={classNames(cl.contact, cl[theme])}>
       <div className={cl.contact_container}>
         <SectionHead title={title} text={textHead} />
         <Form />

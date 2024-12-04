@@ -17,6 +17,7 @@
     height: 2px;
     background-color: $Grey;
     position: absolute;
+    z-index: -1;
     bottom: 0;
   }
 }

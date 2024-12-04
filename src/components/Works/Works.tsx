@@ -13,7 +13,7 @@ const Works = () => {
   const textHead = content.WorksSection.sectionHeader;
 
   return (
-    <section className={classNames(cl.works, cl[theme])}>
+    <section id='works' className={classNames(cl.works, cl[theme])}>
       <SectionHead title={title} text={textHead} />
       <WorksGallery />
     </section>
