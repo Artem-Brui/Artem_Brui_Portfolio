@@ -113,21 +113,6 @@
       }
     }
   }
-
-  & input {
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      background-clip: content-box !important;
-      background-color: transparent !important;
-      box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-      -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-      -webkit-box-shadow: 0 0 0 30px #1a1e23 inset !important;
-      -webkit-text-fill-color: #ffffff !important;
-      font-family: inherit;
-    }
-  }
 }
 
 .light {
@@ -141,19 +126,36 @@
       }
     }
   }
+}
 
-  & input {
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      background-clip: content-box !important;
-      background-color: transparent !important;
-      box-shadow: 0 0 0 1000px #ffffff inset !important;
-      -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-      -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-      -webkit-text-fill-color: #1a1e23 !important;
-      font-family: inherit;
+@include OnMobile {
+  .dark {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-text-fill-color: #ffffff !important;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .light {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-text-fill-color: #1a1e23 !important;
+        font-family: inherit;
+      }
     }
   }
 }
@@ -179,6 +181,36 @@
 
   .input_button {
     font-size: calc($tablet-font-size + 1px);
+  }
+
+  .dark {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-text-fill-color: #ffffff !important;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .light {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-text-fill-color: #1a1e23 !important;
+        font-family: inherit;
+      }
+    }
   }
 }
 
@@ -210,6 +242,36 @@
   .input_button {
     font-size: calc($tablet-font-size + 1px);
   }
+
+  .dark {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-text-fill-color: #ffffff !important;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .light {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-text-fill-color: #1a1e23 !important;
+        font-family: inherit;
+      }
+    }
+  }
 }
 
 @include OnLarge {
@@ -235,5 +297,35 @@
     padding: 15px 30px;
     font-size: calc($large-font-size + 5px);
     border-radius: 42px 0 42px 0;
+  }
+
+  .dark {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+        -webkit-text-fill-color: #ffffff !important;
+        font-family: inherit;
+      }
+    }
+  }
+
+  .light {
+    & .email {
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        background-color: transparent !important;
+        box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-text-fill-color: #1a1e23 !important;
+        font-family: inherit;
+      }
+    }
   }
 }
