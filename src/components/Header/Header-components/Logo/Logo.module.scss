@@ -1,20 +1,16 @@
-.title {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-@include OnTablet {
-  .title {
-    font-size: 22px;
-    line-height: 25px;
+.logo_container {
+  & > p {
+    font-size: $mobile-font-size + 20px;
+    line-height: $mobile-line-height + 15px;;
   }
 }
 
 @include OnDesktop {
-  .title {
-    font-size: 25px;
-    line-height: 30px;
+  .logo_container {
+    & > p {
+      font-size: $desktop-font-size + 25px;
+      line-height: $desktop-line-height + 19px;
+    }
   }
 }
 @include OnLarge {

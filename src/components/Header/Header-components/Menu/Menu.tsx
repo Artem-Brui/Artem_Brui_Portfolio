@@ -7,8 +7,7 @@ const Menu = () => {
   const { theme, colorLight, colorDark } = useTheme();
   
   const iconColor = theme === 'dark' ? colorLight : colorDark;
-  
-  const iconSize = getResponsiveIconSize(1.8);
+  const iconSize = getResponsiveIconSize(1.5);
 
   return (
     <nav className={cl.navigation}>

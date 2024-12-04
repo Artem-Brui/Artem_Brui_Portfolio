@@ -5,19 +5,19 @@
   align-items: center;
   justify-content: end;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   position: absolute;
   right: 0;
 }
 
 .language_item {
   display: flex;
-  align-items: end;
+  align-items: center;
   cursor: pointer;
 }
 
 .language_title {
-  font-size: 11px;
+  font-size: $mobile-font-size - 1px;
   text-transform: uppercase;
 }
 
@@ -30,7 +30,6 @@
     gap: 15px;
   }
   .language_title {
-    font-size: 14px;
-    
+    font-size: $desktop-font-size - 1px;
   }
 }

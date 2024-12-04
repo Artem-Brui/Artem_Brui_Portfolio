@@ -3,6 +3,7 @@ import cl from "./ThemeSwitcher.module.scss";
 import classNames from "classnames";
 import useTheme from "@customHooks/useTheme";
 import { Moon, Sun } from "@components/SVGs/Icons";
+import useWindowWidth from "@customHooks/useWindowScreen";
 
 const ThemeSwitcher = () => {
   const { theme, toggleTheme, colorBrand } = useTheme();
@@ -10,7 +11,7 @@ const ThemeSwitcher = () => {
   const [isDark, setIsDark] = useState(theme === "dark");
 
   const iconColor = !isDark ? colorBrand : "#fafa83";
-  const iconSize = 13;
+  const iconSize = useWindowWidth().windowWidth > 1279 ? 18 : 13;
 
   const handleClick = () => {
     toggleTheme();

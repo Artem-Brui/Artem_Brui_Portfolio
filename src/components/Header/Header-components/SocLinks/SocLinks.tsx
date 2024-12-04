@@ -6,7 +6,7 @@ import useTheme from "@customHooks/useTheme";
 const SocLinks = () => {
   const { colorBrand } = useTheme();
 
-  const iconSize = getResponsiveIconSize(1);
+  const iconSize = getResponsiveIconSize();
   
   return (
     <div className={cl.socLinks}>

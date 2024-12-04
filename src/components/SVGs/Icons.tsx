@@ -582,7 +582,7 @@ const EnFlag: React.FC<PropsIcons> = ({ width, height }) => {
     <svg
       width={width}
       height={height}
-      viewBox="0 0 36 36"
+      viewBox="-2 0 36 36"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
       role="img"
@@ -610,7 +610,7 @@ const DeFlag: React.FC<PropsIcons> = ({ width, height }) => {
     <svg
     width={width}
     height={height}
-      viewBox="8 0 36 36"
+      viewBox="-2 0 36 36"
     >
       <path
         fill="#FFCD05"
@@ -630,7 +630,7 @@ const UaFlag: React.FC<PropsIcons> = ({ width, height }) => {
     <svg
       width={width}
       height={height}
-      viewBox="0 -4 28 28"
+      viewBox="-2 -5 28 28"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

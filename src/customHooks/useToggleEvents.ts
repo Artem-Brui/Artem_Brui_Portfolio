@@ -48,8 +48,8 @@ const useToogleEvents = (...argumentsList: Arguments) => {
     return () => {
       window.removeEventListener("mousemove", handleGlobalMove);
       window.removeEventListener("mouseup", handleGlobalEnd);
-      window.addEventListener("touchmove", handleGlobalMove,  { passive: false });
-      window.addEventListener("touchend", handleGlobalEnd);
+      window.removeEventListener("touchmove", handleGlobalMove);
+      window.removeEventListener("touchend", handleGlobalEnd);
     };
   }, [isMoving, toglerInitialX, toglerWidth, setToogleTransform, setIsMoving]);
 } 

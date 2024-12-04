@@ -17,7 +17,7 @@ const LangugeSwitcher = () => {
     window.localStorage.setItem('portfolioLanguage', language);
   }
 
-  const flagWidth = useWindowWidth().windowWidth > 767 ? 25 : 21;
+  const flagWidth = useWindowWidth().windowWidth > 767 ? 40 : 30;
   const flagHeight = (flagWidth / 3) * 2;
 
   const handleItemClick: React.MouseEventHandler<HTMLLIElement> = (event) => {
