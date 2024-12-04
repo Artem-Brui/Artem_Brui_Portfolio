@@ -11,6 +11,9 @@
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
+    background-clip: content-box !important;
+    box-shadow: 0 0 0 1000px $BG-2 inset !important;
+    -webkit-box-shadow: 0 0 0 1000px $BG-2 inset !important;
     -webkit-box-shadow: 0 0 0 30px $BG-2 inset !important;
     -webkit-text-fill-color: $White !important;
     font-family: inherit;
@@ -24,7 +27,10 @@
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
   input:-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0 30px $White inset !important;
+    background-clip: content-box !important;
+    box-shadow: 0 0 0 1000px $White inset !important;
+    -webkit-box-shadow: 0 0 0 1000px $White inset !important;
+    -webkit-box-shadow: 0 0 0 1000px $White inset !important;
     -webkit-text-fill-color: $BG-2 !important;
     font-family: inherit;
   }
