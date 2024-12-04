@@ -58,6 +58,16 @@
   &::placeholder {
     font-size: calc($mobile-font-size - 2px);
   }
+
+  &:is(:-webkit-autofill, :autofill),
+  &:is(:-webkit-autofill, :autofill) {
+    transition: all 500000000s ease-in-out 0s;
+  }
+}
+
+.name:is(:-webkit-autofill, :autofill),
+.email:is(:-webkit-autofill, :autofill) {
+  transition: all 500000000s ease-in-out 0s;
 }
 
 .message {
@@ -128,38 +138,6 @@
   }
 }
 
-@include OnMobile {
-  .dark {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-family: inherit;
-      }
-    }
-  }
-
-  .light {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-text-fill-color: #1a1e23 !important;
-        font-family: inherit;
-      }
-    }
-  }
-}
-
 @include OnTablet {
   .form {
     width: 550px;
@@ -181,36 +159,6 @@
 
   .input_button {
     font-size: calc($tablet-font-size + 1px);
-  }
-
-  .dark {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-family: inherit;
-      }
-    }
-  }
-
-  .light {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-text-fill-color: #1a1e23 !important;
-        font-family: inherit;
-      }
-    }
   }
 }
 
@@ -242,36 +190,6 @@
   .input_button {
     font-size: calc($tablet-font-size + 1px);
   }
-
-  .dark {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-family: inherit;
-      }
-    }
-  }
-
-  .light {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-text-fill-color: #1a1e23 !important;
-        font-family: inherit;
-      }
-    }
-  }
 }
 
 @include OnLarge {
@@ -297,35 +215,5 @@
     padding: 15px 30px;
     font-size: calc($large-font-size + 5px);
     border-radius: 42px 0 42px 0;
-  }
-
-  .dark {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
-        -webkit-text-fill-color: #ffffff !important;
-        font-family: inherit;
-      }
-    }
-  }
-
-  .light {
-    & .email {
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus,
-      &:-webkit-autofill:active {
-        background-color: transparent !important;
-        box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-        -webkit-text-fill-color: #1a1e23 !important;
-        font-family: inherit;
-      }
-    }
   }
 }
