@@ -224,7 +224,7 @@ export const content = {
     }
   },
   AboutSection: {
-    sectionName: 'About',
+    sectionName: 'About Me',
     greating: 'Hello!',
     paragraphsList: [
       {
