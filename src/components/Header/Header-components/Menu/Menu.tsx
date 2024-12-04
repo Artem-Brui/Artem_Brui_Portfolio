@@ -13,7 +13,7 @@ const Menu = () => {
 
   const { theme, colorLight, colorDark } = useTheme();
   const { content } = useLanguage();
-  const [isMobMenuVisible, setIsMobMenuVisible] = useState(!isDesktop);
+  const [isMobMenuVisible, setIsMobMenuVisible] = useState(false);
 
   const iconColor = theme === "dark" ? colorLight : colorDark;
   const iconSize = getResponsiveIconSize(1.5);
