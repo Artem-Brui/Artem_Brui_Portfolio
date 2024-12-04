@@ -111,6 +111,7 @@ const Form = () => {
           value={formData.name}
           placeholder={formDataContent.formPlaceholders.name}
           onChange={handleChangeName}
+          autoComplete="name"
           required
         />
       </label>
@@ -123,6 +124,7 @@ const Form = () => {
           placeholder={formDataContent.formPlaceholders.email}
           value={formData.email}
           onChange={handleChangeEmail}
+          autoComplete="email"
           required
         />
       </label>
