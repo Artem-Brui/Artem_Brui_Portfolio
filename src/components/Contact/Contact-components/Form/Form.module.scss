@@ -113,6 +113,21 @@
       }
     }
   }
+
+  & input {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-clip: content-box !important;
+      background-color: transparent !important;
+      box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+      -webkit-box-shadow: 0 0 0 1000px #1a1e23 inset !important;
+      -webkit-box-shadow: 0 0 0 30px #1a1e23 inset !important;
+      -webkit-text-fill-color: #ffffff !important;
+      font-family: inherit;
+    }
+  }
 }
 
 .light {
@@ -124,6 +139,21 @@
       &::placeholder {
         color: rgba($BG-2, 0.4);
       }
+    }
+  }
+
+  & input {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      background-clip: content-box !important;
+      background-color: transparent !important;
+      box-shadow: 0 0 0 1000px #ffffff inset !important;
+      -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+      -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+      -webkit-text-fill-color: #1a1e23 !important;
+      font-family: inherit;
     }
   }
 }
