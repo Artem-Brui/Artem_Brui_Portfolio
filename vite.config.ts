@@ -7,7 +7,10 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
   ],
-  base: '/Artem_Brui_Portfolio/',
+  base: './',
+  build: {
+    assetsDir: 'assets',
+  },
   css: {
     preprocessorOptions: {
       scss: {
