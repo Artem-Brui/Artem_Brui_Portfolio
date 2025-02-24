@@ -1,4 +1,4 @@
-import { Bootstrap, Bulma, Css, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript, EnFlag } from "../components/SVGs/Icons";
+import { Bootstrap, Bulma, Css, Socket, Express, Figma, Git, Html, Javascript, Mongodb, React, Redux, Sass, Tailwind, Typescript, EnFlag } from "../components/SVGs/Icons";
 
 const skills = [
   {
@@ -78,6 +78,12 @@ const skills = [
     logo: Express,
     logoColor: '#000000',
     descreption: 'A minimalist backend framework for building APIs and web applications on Node.js.',  
+  },
+  {
+    name: 'socket.io',
+    logo: Socket,
+    logoColor: '#000000',
+    descreption: 'А real-time, bidirectional communication library for web applications.',  
   },
   {
     name: 'mongodb',
@@ -162,7 +168,7 @@ const jobs = [
       'Conducting educational live-coding with solving tasks in real time with students.',
     ],
     startDate: '01.05.2024',
-    endDate: '',
+    endDate: "18.02.2025",
   },
   {
     company: 'Air Team',
